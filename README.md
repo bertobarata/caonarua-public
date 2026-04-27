@@ -6,11 +6,9 @@ Website institucional da creche canina **Cão na Rua**, localizada em Maceira, S
 
 ## Preview
 
-![desktop](assets/screenshots/desktop.webp)
-
-| Mobile (XR) | Mobile (iPhone 14) | Tablet (creche) | Tablet (formulário) |
-|-------------|-------------------|-----------------|---------------------|
-| ![mobile](assets/screenshots/mobile.webp) | ![mobile-iphone14](assets/screenshots/mobile-iphone14.webp) | ![tablet](assets/screenshots/tablet.webp) | ![formulario-ipad](assets/screenshots/formulario-ipad.webp) |
+| Mobile (iPhone 14) | Tablet (formulário) |
+|-------------------|---------------------|
+| ![mobile-iphone14](assets/screenshots/mobile-iphone14.webp) | ![formulario-ipad](assets/screenshots/formulario-ipad.webp) |
 
 ## Stack
 
