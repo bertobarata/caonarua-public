@@ -4,6 +4,14 @@ Website institucional da creche canina **Cão na Rua**, localizada em Maceira, S
 
 🌐 **Live:** https://caonarua.pt
 
+## Preview
+
+![desktop](assets/screenshots/desktop.webp)
+
+| Mobile | Tablet |
+|--------|--------|
+| ![mobile](assets/screenshots/mobile.webp) | ![tablet](assets/screenshots/tablet.webp) |
+
 ## Stack
 
 - **HTML5 / CSS3 / JavaScript vanilla** — sem frameworks, sem bundler
