@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Preload critical resources -->
+  <link rel="preload" href="css/styles.css?v=19" as="style" />
+    
+    <title>Cão na Rua — Passeios na Natureza em Sintra</title>
+    <meta name="description" content="Passeios na natureza para cães em grupo, em trilhos naturais na zona de Sintra. Exploração sensorial, socialização equilibrada e bem-estar canino." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Passeios na Natureza — Cão na Rua" />
+    <meta property="og:description" content="Passeios em grupo para cães em trilhos naturais de Sintra. Abertos a todos os cães, independentemente de frequentarem a creche." />
+    <meta property="og:site_name" content="Cão na Rua" />
+  <link rel="stylesheet" href="css/styles.css?v=19" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="shortcut icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="apple-touch-icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <a href="index.html#home" class="logo-link" aria-label="Início">
+          <img src="assets/logos/CNR-logotipo-removebg.webp" alt="CNR - logotipo" class="logo" />
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" data-i18n="nav.menu">Menu</button>
+        <ul id="main-menu">
+          <li><a href="index.html#home" class="home-btn" data-i18n="nav.home">Início 🏠</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#services" aria-haspopup="true" aria-expanded="false" data-i18n="nav.services">Serviços 🐾</a>
+              <ul class="dropdown" aria-label="Serviços" data-i18n-aria="nav.servicesLabel">
+                <li><a href="creche.html" data-i18n="nav.daycare">Creche</a></li>
+                <li><a href="passeios-individuais.html" data-i18n="nav.individualWalks">Passeios Individuais</a></li>
+                <li><a href="estadias-familiares.html" data-i18n="nav.familyStays">Estadias Familiares</a></li>
+                <li><a href="transportes.html" data-i18n="nav.transport">Transporte</a></li>
+                <li><a href="passeiosnanatureza.html" data-i18n="nav.natureWalks">Passeios na Natureza</a></li>
+                <li><a href="casamentos.html" data-i18n="nav.weddings">Cães em Casamentos</a></li>
+              </ul>
+          </li>
+          <li><a href="caes-do-cao-na-rua.html" data-i18n="nav.ourDogs">Os Nossos Cães 🐕</a></li>
+          <li><a href="index.html#team" data-i18n="nav.team">Equipa 👩‍⚕️</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ ❓</a></li>
+          <li><a class="cta" href="index.html#contacts" data-i18n="nav.contact">Contacta-nos 📞</a></li>
+            <li class="menu-back-item"><button class="menu-back-btn" aria-label="Fechar menu">&#x203A;</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section creche-main">
+      <h1 class="page-title"><span data-i18n="hero.title">Passeios na Natureza</span> 
+        <picture>
+          <source srcset="assets/gifs/hidrovia.webp" type="image/webp">
+          <img src="assets/gifs/hidrovia.gif" alt="Natureza" class="decor-icon" />
+        </picture>
+      </h1>
+  <p class="page-subtitle" data-i18n="hero.subtitle">Todos os cães se juntam para explorar e divertir — sejam da creche, estadia ou apenas para passeios!</p>
+      
+      <div class="content">
+  <p class="lead-text" data-i18n="hero.description">Os nossos passeios na natureza conciliam exploração sensorial, socialização criteriosa e práticas de bem-estar canino. Selecionamos trilhos que estimulam o olfato, a curiosidade e a mobilidade, adaptando ritmo e duração a cada grupo para promover segurança física e equilíbrio emocional.</p>
+
+        <div class="slideshow-container">
+          <div class="slideshow-wrapper">
+            <button class="slideshow-btn prev" aria-label="Imagem anterior" data-i18n-aria="gallery.prev">‹</button>
+            <div class="slideshow-image-container">
+              <img id="slideshow-image" src="assets/fotos/passeiosnanatureza/image00001.webp" alt="Passeios na Natureza" />
+            </div>
+            <button class="slideshow-btn next" aria-label="Próxima imagem" data-i18n-aria="gallery.next">›</button>
+          </div>
+          <div class="slideshow-counter">
+            <span id="current-image">1</span> / <span id="total-images">0</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <h3 id="faq-title" data-i18n="faq.title">FAQ</h3>
+      <details>
+        <summary data-i18n="faq.q1">O que são os passeios na natureza?</summary>
+        <p class="lead-text" data-i18n="faq.a1">São saídas em grupo para trilhos naturais, onde os cães exploram, socializam e desfrutam de estímulos sensoriais num ambiente seguro e controlado.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">Quantos cães vão em cada passeio?</summary>
+        <p class="lead-text" data-i18n="faq.a2">Os grupos são pequenos e organizados por compatibilidade, garantindo segurança e atenção individualizada a cada cão.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">Para que cães são adequados?</summary>
+        <p class="lead-text" data-i18n="faq.a3">Para cães sociáveis que gostem de explorar e interagir com outros cães. Fazemos sempre uma avaliação prévia do comportamento.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">Que locais visitam?</summary>
+        <p class="lead-text" data-i18n="faq.a4">Escolhemos trilhos variados na zona de Sintra e arredores, sempre adaptados às condições meteorológicas e ao perfil do grupo.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q5">O meu cão precisa de estar na creche para ir aos passeios?</summary>
+        <p class="lead-text" data-i18n="faq.a5">Não! Os passeios na natureza estão abertos a todos os cães, independentemente de frequentarem a creche ou outros serviços.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q6">Devo avisar sobre intolerâncias alimentares?</summary>
+        <p class="lead-text" data-i18n="faq.a6">Sim. É importante avisar antecipadamente caso o cão apresente alguma intolerância alimentar, para que possamos garantir a sua segurança durante o passeio.</p>
+      </details>
+    </section>
+
+    <section id="contacts" class="section" aria-labelledby="contact-heading">
+  <h3 id="contact-heading" data-i18n="contact.heading">QUERES MARCAR A AVALIAÇÃO DO TEU CÃO?</h3>
+
+      <div class="contact-methods">
+        <div class="contact-line whatsapp-line">
+          <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="contact-link whatsapp-cta" aria-label="Contactar por WhatsApp - Preferencial" data-i18n-aria="contact.whatsappAria">
+            <img src="assets/logos/whatsapp.webp" alt="whatsapp" class="contact-icon whatsapp-icon" />
+            <span class="contact-text" data-i18n="contact.whatsappLabel">WHATSAPP</span>
+            <span class="badge" data-i18n="contact.badge">Preferencial</span>
+          </a>
+        </div>
+
+        <div class="contact-line">
+          <a href="mailto:caoderuageral@gmail.com" class="contact-link">
+            <img src="assets/logos/o-email.webp" alt="email" class="contact-icon" />
+            <span class="contact-text">caoderuageral@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="contact-line">
+            <a href="https://instagram.com/cao_na_rua" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <img src="assets/logos/instagram.webp" alt="instagram" class="contact-icon" />
+            <span class="contact-text">@cao_na_rua</span>
+          </a>
+        </div>
+      </div>
+
+  <p class="contact-sub" data-i18n="contact.or">ou então</p>
+
+      <div class="form-cta">
+  <a class="button" href="formulario.html" data-i18n="contact.formButton">Preenche o formulário</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+
+  <div class="footer-columns">
+      <!-- Horários -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.scheduleTitle">Horários de Funcionamento</h4>
+        <div class="footer-horario">
+          <span data-i18n="footer.scheduleLine1">Segunda a Sexta: 7h30-18.30h</span>
+          <span data-i18n="footer.scheduleLine2">Encerra aos fins de semana e feriados.</span>
+        </div>
+      </div>
+      <!-- Informações -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.infoLabel">Informações</h4>
+        <div class="footer-contact-line">
+          <span data-i18n="footer.faqPrompt">Perguntas frequentes: <a href="faq.html" class="footer-link-faq">FAQs</a></span>
+        </div>
+        <div class="footer-contact-line">
+          <a href="politica-privacidade.html" class="footer-link-privacy" data-i18n="footer.privacy">Política de Privacidade</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="politica-cookies.html" class="footer-link-privacy" data-i18n="footer.cookies">Política de Cookies</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="termos-condicoes.html" class="footer-link-terms" data-i18n="footer.terms">Termos e Condições</a>
+        </div>
+      </div>
+      <!-- Redes Sociais e Contactos -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.socialContactsTitle">Redes Sociais e Contactos</h4>
+        <div class="footer-contact-line">
+          <img src="assets/logos/whatsapp.webp" alt="whatsapp" class="footer-icon footer-icon-whatsapp"> 
+          <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="footer-link-whatsapp">+351 934 527 652</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/instagram.webp" alt="instagram" class="footer-icon footer-icon-instagram"> 
+          <a href="https://instagram.com/cao_na_rua" target="_blank" rel="noopener noreferrer" class="footer-link-instagram">@cao_na_rua</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/facebook2.webp" alt="facebook" class="footer-icon footer-icon-facebook"> 
+          <a href="https://www.facebook.com/caoderualisboa/" target="_blank" rel="noopener noreferrer" class="footer-link-facebook">Cão de Rua Lisboa</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/o-email.webp" alt="email" class="footer-icon footer-icon-mail"> 
+          <a href="mailto:caoderuageral@gmail.com" class="footer-link-mail">caoderuageral@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <small>© <span id="year"></span> Cão na Rua</small>
+    </footer>
+
+    <script>
+      // Slideshow functionality — preload and filter only horizontal images (width > height)
+      (function() {
+        // Use the prefiltered horizontal images copied to assets/fotos/horizontais
+        const imagesAll = [
+          'background2.webp','background.webp','image00002.webp','image00013.webp','image00014.webp','image00015.webp','image00016.webp','image00017.webp','image00018.webp','image00019.webp','image00020.webp','image00022.webp','image00023.webp','image00025.webp','image00026.webp','image00027.webp','image00028.webp','image00030.webp','image00031.webp','image00032.webp','image00033.webp','image00034.webp','image00035.webp','image00036.webp','image00040.webp','image00041.webp','image00044.webp','image00046.webp','image00047.webp','image00048.webp','image00054.webp','image00055.webp','image00056.webp','image00057.webp','image00062.webp','image00064.webp','image00065.webp','image00066.webp','image00069.webp','image00072.webp','image00074.webp','image00075.webp','image00076.webp','image00077.webp','image00079.webp','image00080.webp','image00081.webp','image00082.webp','image00083.webp','image00084.webp','image00087.webp','image00089.webp','image00090.webp','image00095.webp','image00096.webp','image00098.webp','image00099.webp','image00106.webp','image00107.webp','image00108.webp','image00109.webp','image00132.webp','passeio-de-costas.webp'
+        ];
+
+        const slideshowImage = document.getElementById('slideshow-image');
+        const currentImageSpan = document.getElementById('current-image');
+        const totalImagesSpan = document.getElementById('total-images');
+        const prevBtn = document.querySelector('.slideshow-btn.prev');
+        const nextBtn = document.querySelector('.slideshow-btn.next');
+
+        // Start with the first image immediately so the UI isn't empty while we probe orientations
+        let images = imagesAll.slice();
+        let currentIndex = 0;
+  slideshowImage.src = 'assets/fotos/passeiosnanatureza/' + images[currentIndex];
+        totalImagesSpan.textContent = images.length;
+
+        function updateImage() {
+          slideshowImage.src = 'assets/fotos/passeiosnanatureza/' + images[currentIndex];
+          currentImageSpan.textContent = currentIndex + 1;
+        }
+
+        prevBtn.addEventListener('click', function() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          updateImage();
+        });
+
+        nextBtn.addEventListener('click', function() {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateImage();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'ArrowLeft') prevBtn.click();
+          else if (e.key === 'ArrowRight') nextBtn.click();
+        });
+
+        // Preload images to detect orientation in background. When done, replace the images list
+        const probes = imagesAll.map(name => new Promise(resolve => {
+          const img = new Image();
+          img.src = 'assets/fotos/passeiosnanatureza/' + name;
+          img.onload = () => resolve({ name, w: img.naturalWidth, h: img.naturalHeight });
+          img.onerror = () => resolve({ name, w: 0, h: 0 });
+        }));
+
+        probes.then(results => {
+          const filtered = results.filter(r => r.w > r.h).map(r => r.name);
+          if (filtered.length) {
+            images = filtered;
+            currentIndex = 0;
+            totalImagesSpan.textContent = images.length;
+            updateImage();
+          } else {
+            // no horizontals found — keep the original list (already displayed)
+            totalImagesSpan.textContent = images.length;
+          }
+        });
+      })();
+    </script>
+
+    <!-- Traduções da página Passeios na Natureza -->
+    <script>
+      window.translations = {
+        pt: {
+          pageTitle: "Cão na Rua — Passeios na Natureza",
+          nav: {
+            menu: "Menu",
+            home: "Início 🏠",
+            services: "Serviços 🐾",
+            servicesLabel: "Serviços",
+            daycare: "Creche",
+            natureWalks: "Passeios na Natureza",
+            individualWalks: "Passeios Individuais",
+            familyStays: "Estadias Familiares",
+            transport: "Transporte",
+            ourDogs: "Os Nossos Cães 🐕",
+            team: "Equipa 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contacta-nos 📞"
+          },
+          hero: {
+            title: "Passeios na Natureza",
+            subtitle: "Todos os cães se juntam para explorar e divertir — sejam da creche, estadia ou apenas para passeios!",
+            description: "Os nossos passeios na natureza conciliam exploração sensorial, socialização criteriosa e práticas de bem-estar canino. Selecionamos trilhos que estimulam o olfato, a curiosidade e a mobilidade, adaptando ritmo e duração a cada grupo para promover segurança física e equilíbrio emocional."
+          },
+          gallery: {
+            prev: "Imagem anterior",
+            next: "Próxima imagem"
+          },
+          faq: {
+            title: "FAQ",
+            q1: "O que são os passeios na natureza?",
+            a1: "São saídas em grupo para trilhos naturais, onde os cães exploram, socializam e desfrutam de estímulos sensoriais num ambiente seguro e controlado.",
+            q2: "Quantos cães vão em cada passeio?",
+            a2: "Os grupos são pequenos e organizados por compatibilidade, garantindo segurança e atenção individualizada a cada cão.",
+            q3: "Para que cães são adequados?",
+            a3: "Para cães sociáveis que gostem de explorar e interagir com outros cães. Fazemos sempre uma avaliação prévia do comportamento.",
+            q4: "Que locais visitam?",
+            a4: "Escolhemos trilhos variados na zona de Sintra e arredores, sempre adaptados às condições meteorológicas e ao perfil do grupo.",
+            q5: "O meu cão precisa de estar na creche para ir aos passeios?",
+            a5: "Não! Os passeios na natureza estão abertos a todos os cães, independentemente de frequentarem a creche ou outros serviços.",
+            q6: "Devo avisar sobre intolerâncias alimentares?",
+            a6: "Sim. É importante avisar antecipadamente caso o cão apresente alguma intolerância alimentar, para que possamos garantir a sua segurança durante o passeio."
+          },
+          contact: {
+            heading: "QUERES MARCAR A AVALIAÇÃO DO TEU CÃO?",
+            formButton: "Preenche o formulário",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferencial",
+            whatsappAria: "Contactar por WhatsApp - Preferencial"
+          },
+          footer: {
+            scheduleTitle: "Horários de Funcionamento",
+            scheduleLine1: "Segunda a Sexta: 7h30-18.30h",
+            scheduleLine2: "Encerra aos fins de semana e feriados.",
+            infoLabel: "Informações",
+            faqPrompt: "Perguntas frequentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidade",
+            cookies: "Política de Cookies",
+            terms: "Termos e Condições",
+            socialContactsTitle: "Redes Sociais e Contactos"
+          }
+        },
+        en: {
+          pageTitle: "Cão na Rua — Nature Walks",
+          nav: {
+            menu: "Menu",
+            home: "Home 🏠",
+            services: "Services 🐾",
+            servicesLabel: "Services",
+            daycare: "Daycare",
+            natureWalks: "Nature Walks",
+            individualWalks: "Individual Walks",
+            familyStays: "Family Stays",
+            transport: "Transport",
+            ourDogs: "Our Dogs 🐕",
+            team: "Team 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contact Us 📞"
+          },
+          hero: {
+            title: "Nature Walks",
+            subtitle: "All dogs come together to explore and have fun — whether from daycare, boarding, or just for walks!",
+            description: "Our nature walks combine sensory exploration, careful socialisation, and canine well-being practices. We choose trails that stimulate scent, curiosity, and mobility, adjusting pace and length for each group to ensure physical safety and emotional balance."
+          },
+          gallery: {
+            prev: "Previous image",
+            next: "Next image"
+          },
+          faq: {
+            title: "FAQ",
+            q1: "What are nature walks?",
+            a1: "Group outings to natural trails where dogs explore, socialise, and enjoy sensory stimulation in a safe and controlled environment.",
+            q2: "How many dogs go on each walk?",
+            a2: "Groups are small and organised by compatibility, ensuring safety and individualised attention for each dog.",
+            q3: "What dogs are they suitable for?",
+            a3: "For sociable dogs who enjoy exploring and interacting with other dogs. We always conduct a prior behavioural assessment.",
+            q4: "What locations do you visit?",
+            a4: "We choose varied trails in the Sintra area and surroundings, always adapted to weather conditions and the group's profile.",
+            q5: "Does my dog need to be in daycare to join the walks?",
+            a5: "No! Nature walks are open to all dogs, regardless of whether they attend daycare or other services.",
+            q6: "Should I mention any food intolerances?",
+            a6: "Yes. It is important to let us know in advance if your dog has any food intolerances, so we can ensure their safety during the walk."
+          },
+          contact: {
+            heading: "WANT TO SCHEDULE YOUR DOG'S ASSESSMENT?",
+            formButton: "Fill in the form",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferred",
+            whatsappAria: "Contact via WhatsApp - Preferred"
+          },
+          footer: {
+            scheduleTitle: "Operating Hours",
+            scheduleLine1: "Monday to Friday: 7:30am-6:30pm",
+            scheduleLine2: "Closed on weekends and holidays.",
+            infoLabel: "Information:",
+            faqPrompt: "Frequently asked questions: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Privacy Policy",
+            cookies: "Cookie Policy",
+            terms: "Terms & Conditions",
+            socialContactsTitle: "Social Media & Contacts"
+          }
+        },
+        es: {
+          pageTitle: "Cão na Rua — Paseos en la Naturaleza",
+          nav: {
+            menu: "Menú",
+            home: "Inicio 🏠",
+            services: "Servicios 🐾",
+            servicesLabel: "Servicios",
+            daycare: "Guardería",
+            natureWalks: "Paseos en la Naturaleza",
+            individualWalks: "Paseos Individuales",
+            familyStays: "Estancias Familiares",
+            transport: "Transporte",
+            ourDogs: "Nuestros Perros 🐕",
+            team: "Equipo 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contáctanos 📞"
+          },
+          hero: {
+            title: "Paseos en la Naturaleza",
+            subtitle: "Todos los perros se reúnen para explorar y divertirse — vengan de la guardería, de una estadía o solo para paseos!",
+            description: "Nuestros paseos en la naturaleza combinan exploración sensorial, socialización criteriosa y prácticas de bienestar canino. Elegimos rutas que estimulan el olfato, la curiosidad y la movilidad, adaptando el ritmo y la duración a cada grupo para promover seguridad física y equilibrio emocional."
+          },
+          gallery: {
+            prev: "Imagen anterior",
+            next: "Siguiente imagen"
+          },
+          faq: {
+            title: "FAQ",
+            q1: "¿Qué son los paseos en la naturaleza?",
+            a1: "Salidas en grupo a senderos naturales donde los perros exploran, socializan y disfrutan de estímulos sensoriales en un entorno seguro y controlado.",
+            q2: "¿Cuántos perros van en cada paseo?",
+            a2: "Los grupos son pequeños y están organizados por compatibilidad, garantizando seguridad y atención individualizada a cada perro.",
+            q3: "¿Para qué perros son adecuados?",
+            a3: "Para perros sociables a los que les guste explorar e interactuar con otros perros. Siempre realizamos una evaluación previa del comportamiento.",
+            q4: "¿Qué lugares visitan?",
+            a4: "Elegimos senderos variados en la zona de Sintra y alrededores, siempre adaptados a las condiciones meteorológicas y al perfil del grupo.",
+            q5: "¿Mi perro necesita estar en la guardería para ir a los paseos?",
+            a5: "¡No! Los paseos en la naturaleza están abiertos a todos los perros, independientemente de si asisten a la guardería u otros servicios.",
+            q6: "¿Debo avisar sobre intolerancias alimentarias?",
+            a6: "Sí. Es importante avisarnos con antelación si el perro tiene alguna intolerancia alimentaria, para que podamos garantizar su seguridad durante el paseo."
+          },
+          contact: {
+            heading: "¿QUIERES PROGRAMAR LA EVALUACIÓN DE TU PERRO?",
+            formButton: "Completa el formulario",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferente",
+            whatsappAria: "Contactar por WhatsApp - Preferente"
+          },
+          footer: {
+            scheduleTitle: "Horarios de Funcionamiento",
+            scheduleLine1: "Lunes a Viernes: 7:30-18:30",
+            scheduleLine2: "Cerrado fines de semana y festivos.",
+            infoLabel: "Información:",
+            faqPrompt: "Preguntas frecuentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidad",
+            cookies: "Política de Cookies",
+            terms: "Términos y Condiciones",
+            socialContactsTitle: "Redes Sociales y Contactos"
+          }
+        },
+        fr: {
+          pageTitle: "Cão na Rua — Promenades dans la Nature",
+          nav: {
+            menu: "Menu",
+            home: "Accueil 🏠",
+            services: "Services 🐾",
+            servicesLabel: "Services",
+            daycare: "Garderie",
+            natureWalks: "Promenades dans la Nature",
+            individualWalks: "Promenades Individuelles",
+            familyStays: "Séjours en Famille",
+            transport: "Transport",
+            ourDogs: "Nos Chiens 🐕",
+            team: "Équipe 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contactez-nous 📞"
+          },
+          hero: {
+            title: "Promenades dans la Nature",
+            subtitle: "Tous les chiens se retrouvent pour explorer et s'amuser — qu'ils viennent de la garderie, d'un séjour ou uniquement pour les promenades !",
+            description: "Nos promenades en pleine nature allient exploration sensorielle, socialisation maîtrisée et pratiques de bien-être canin. Nous choisissons des sentiers qui stimulent l'odorat, la curiosité et la mobilité, en adaptant rythme et durée à chaque groupe pour assurer sécurité physique et équilibre émotionnel."
+          },
+          gallery: {
+            prev: "Image précédente",
+            next: "Image suivante"
+          },
+          faq: {
+            title: "FAQ",
+            q1: "Que sont les promenades dans la nature ?",
+            a1: "Des sorties en groupe sur des sentiers naturels où les chiens explorent, socialisent et profitent de stimulations sensorielles dans un environnement sûr et contrôlé.",
+            q2: "Combien de chiens participent à chaque promenade ?",
+            a2: "Les groupes sont petits et organisés par compatibilité, garantissant sécurité et attention individualisée pour chaque chien.",
+            q3: "Pour quels chiens sont-elles adaptées ?",
+            a3: "Pour les chiens sociables qui aiment explorer et interagir avec d'autres chiens. Nous effectuons toujours une évaluation comportementale préalable.",
+            q4: "Quels lieux visitez-vous ?",
+            a4: "Nous choisissons des sentiers variés dans la région de Sintra et ses environs, toujours adaptés aux conditions météorologiques et au profil du groupe.",
+            q5: "Mon chien doit-il être à la garderie pour participer aux promenades ?",
+            a5: "Non ! Les promenades dans la nature sont ouvertes à tous les chiens, qu'ils fréquentent ou non la garderie ou d'autres services.",
+            q6: "Dois-je signaler des intolérances alimentaires ?",
+            a6: "Oui. Il est important de nous prévenir à l'avance si votre chien présente une intolérance alimentaire, afin de garantir sa sécurité pendant la promenade."
+          },
+          contact: {
+            heading: "VOUS VOULEZ PLANIFIER L'ÉVALUATION DE VOTRE CHIEN ?",
+            formButton: "Remplissez le formulaire",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Prioritaire",
+            whatsappAria: "Contacter via WhatsApp - Prioritaire"
+          },
+          footer: {
+            scheduleTitle: "Horaires d'Ouverture",
+            scheduleLine1: "Du lundi au vendredi : 7h30-18h30",
+            scheduleLine2: "Fermé les week-ends et jours fériés.",
+            infoLabel: "Informations :",
+            faqPrompt: "Questions fréquentes : <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Politique de Confidentialité",
+            cookies: "Politique de Cookies",
+            terms: "Termes et Conditions",
+            socialContactsTitle: "Réseaux sociaux et contacts"
+          }
+        }
+      };
+    </script>
+
+
+    <!-- Language Switcher -->
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+      <img src="assets/logos/whatsapp.webp" alt="WhatsApp" />
+    </a>
+
+        <!-- Animation libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="js/lang-switcher.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dog-effects.js"></script>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      (function(){
+        var toggle = document.querySelector('.nav-toggle');
+        var menu = document.getElementById('main-menu');
+        if(toggle && menu){
+          toggle.addEventListener('click', function(){
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            menu.classList.toggle('show');
+          });
+        }
+        var backBtn = document.querySelector('.menu-back-btn');
+        if(backBtn && toggle) {
+          backBtn.addEventListener('click', function(){ toggle.click(); });
+        }
+        var dropdownToggles = document.querySelectorAll('.has-dropdown > a');
+        dropdownToggles.forEach(function(d){
+          d.addEventListener('click', function(e){
+            var parent = this.parentElement;
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            if(window.matchMedia && window.matchMedia('(max-width:720px)').matches){
+              var dd = parent.querySelector('.dropdown');
+              if(dd) dd.style.display = expanded ? 'none' : 'flex';
+              e.preventDefault();
+            }
+          });
+        });
+      })();
+
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registado com sucesso:', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('Falha ao registar Service Worker:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

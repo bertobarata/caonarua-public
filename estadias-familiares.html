@@ -1,0 +1,616 @@
+    
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Preload critical resources -->
+  <link rel="preload" href="css/styles.css?v=19" as="style" />
+    
+    <title>Cão na Rua — Estadias Familiares</title>
+  <link rel="stylesheet" href="css/styles.css?v=19" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="shortcut icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="apple-touch-icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <a href="index.html#home" class="logo-link" aria-label="Início">
+          <img src="assets/logos/CNR-logotipo-removebg.webp" alt="CNR - logotipo" class="logo" />
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" data-i18n="nav.menu">Menu</button>
+        <ul id="main-menu">
+          <li><a href="index.html#home" class="home-btn" data-i18n="nav.home">Início 🏠</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#services" aria-haspopup="true" aria-expanded="false" data-i18n="nav.services">Serviços 🐾</a>
+              <ul class="dropdown" aria-label="Serviços" data-i18n-aria="nav.servicesLabel">
+                <li><a href="creche.html" data-i18n="nav.daycare">Creche</a></li>
+                <li><a href="passeios-individuais.html" data-i18n="nav.individualWalks">Passeios Individuais</a></li>
+                <li><a href="estadias-familiares.html" data-i18n="nav.familyStays">Estadias Familiares</a></li>
+                <li><a href="transportes.html" data-i18n="nav.transport">Transporte</a></li>
+                <li><a href="passeiosnanatureza.html" data-i18n="nav.natureWalks">Passeios na Natureza</a></li>
+                <li><a href="casamentos.html" data-i18n="nav.weddings">Cães em Casamentos</a></li>
+              </ul>
+          </li>
+          <li><a href="caes-do-cao-na-rua.html" data-i18n="nav.ourDogs">Os Nossos Cães 🐕</a></li>
+          <li><a href="index.html#team" data-i18n="nav.team">Equipa 👩‍⚕️</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ ❓</a></li>
+          <li><a class="cta" href="index.html#contacts" data-i18n="nav.contact">Contacta-nos 📞</a></li>
+            <li class="menu-back-item"><button class="menu-back-btn" aria-label="Fechar menu">&#x203A;</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section creche-main">
+  <h1 class="page-title"><span data-i18n="hero.title">Estadias Familiares</span> <img src="assets/gifs/house.gif" alt="Casa" class="house-gif-title" /></h1>
+      <p class="page-subtitle" data-i18n="hero.subtitle">O teu cão fica em casa de família, com todo o carinho e atenção que merece</p>
+
+      <div class="side-boxes">
+        <div class="side-box">
+          <div class="side-box-media">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/fotos/estadiasfamiliares/00006estadias_familiares-400w.webp 400w,
+                        assets/fotos/estadiasfamiliares/00006estadias_familiares-600w.webp 600w,
+                        assets/fotos/estadiasfamiliares/00006estadias_familiares.webp 2000w"
+                sizes="(max-width: 600px) 400px, 600px"
+              />
+              <img src="assets/fotos/estadiasfamiliares/00006estadias_familiares.webp" alt="Estadia familiar" loading="lazy" />
+            </picture>
+          </div>
+          <div class="side-box-content">
+            <h3 data-i18n="sections.meaning.title">O que significa estadia familiar?</h3>
+            <p data-i18n="sections.meaning.text">A estadia é feita na habitação própria das tias (Lisboa), onde o cão é integrado como família, com muito amor à mistura.</p>
+          </div>
+        </div>
+
+        <div class="side-box reverse">
+          <div class="side-box-media">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/fotos/estadiasfamiliares/00003estadias_familiares_2-400w.webp 400w,
+                        assets/fotos/estadiasfamiliares/00003estadias_familiares_2-600w.webp 600w,
+                        assets/fotos/estadiasfamiliares/00003estadias_familiares_2.webp 2000w"
+                sizes="(max-width: 600px) 400px, 600px"
+              />
+              <img src="assets/fotos/estadiasfamiliares/00003estadias_familiares_2.webp" alt="Rotina" loading="lazy" />
+            </picture>
+          </div>
+          <div class="side-box-content">
+            <h3 data-i18n="sections.routine.title">Qual a rotina?</h3>
+            <p data-i18n="sections.routine.text">No período de segunda a quinta, o teu cão vai frequentar a nossa creche e fazer passeios na natureza.<br>
+Ao fim de semana tiramos proveito da mãe natureza e percorremos trilhos, ribeiros, praias.<br>
+Algo que não abdicamos: <strong>DESCANSO e MIMO</strong>.</p>
+          </div>
+        </div>
+
+        <div class="side-box">
+          <div class="side-box-media">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/fotos/estadiasfamiliares/00004estadias_familiares-400w.webp 400w,
+                        assets/fotos/estadiasfamiliares/00004estadias_familiares-600w.webp 600w,
+                        assets/fotos/estadiasfamiliares/00004estadias_familiares.webp 1500w"
+                sizes="(max-width: 600px) 400px, 600px"
+              />
+              <img src="assets/fotos/estadiasfamiliares/00004estadias_familiares.webp" alt="Entrada em estadia" loading="lazy" />
+            </picture>
+          </div>
+          <div class="side-box-content">
+            <h3 data-i18n="sections.entry.title">Horário de entrada</h3>
+            <p data-i18n="sections.entry.text">As entradas para estadia são realizadas pela manhã, em horário previamente combinado para garantir uma receção tranquila e personalizada ao teu cão.<br>
+Pedimos que respeite este horário para facilitar a adaptação e o bem-estar do animal desde o primeiro momento.</p>
+          </div>
+        </div>
+
+        <div class="side-box reverse">
+          <div class="side-box-content">
+            <h3 data-i18n="sections.night.title">Onde fica o meu cão no período da noite?</h3>
+            <p data-i18n="sections.night.text">Não, não fica numa box no exterior. O teu cão é livre de descansar em qualquer divisão interior da nossa casa (sofá, camas, etc).</p>
+          </div>
+          <div class="side-box-media">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/fotos/estadiasfamiliares/00005estadias_familiares-400w.webp 400w,
+                        assets/fotos/estadiasfamiliares/00005estadias_familiares-600w.webp 600w,
+                        assets/fotos/estadiasfamiliares/00005estadias_familiares.webp 1500w"
+                sizes="(max-width: 600px) 400px, 600px"
+              />
+              <img src="assets/fotos/estadiasfamiliares/00005estadias_familiares.JPG" alt="Noite em estadia" loading="lazy" class="focus-bottom-left" width="1500" height="1125" />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <section class="section faq" aria-labelledby="faq-title">
+      <h3 id="faq-title" data-i18n="faq.heading">FAQ</h3>
+      <details>
+        <summary data-i18n="faq.q1">O que é uma estadia familiar?</summary>
+        <p class="lead-text" data-i18n="faq.a1">É quando o teu cão fica hospedado na casa de uma cuidadora, sendo tratado como membro da família, com conforto, carinho e atenção individualizada.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">O meu cão vai ficar sozinho?</summary>
+        <p class="lead-text" data-i18n="faq.a2">Não! O teu cão terá companhia humana e, se for compatível, poderá conviver com outros cães da casa.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">Como funciona a alimentação?</summary>
+        <p class="lead-text" data-i18n="faq.a3">A alimentação é feita conforme as orientações do tutor, utilizando a ração ou dieta habitual do cão.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">O que devo levar para a estadia do meu cão?</summary>
+        <p class="lead-text" data-i18n="faq.a4">Por favor, contacta-nos para receberes uma lista personalizada do que deves trazer para a estadia do teu cão.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q5">O meu cão precisa de uma avaliação prévia?</summary>
+        <p class="lead-text" data-i18n="faq.a5">Sim, todas as estadias requerem uma avaliação inicial para garantir que o teu cão se adapta bem ao ambiente familiar e às rotinas da cuidadora.</p> 
+      </details>
+      <details>
+        <summary data-i18n="faq.q6">Como agendar uma estadia?</summary>
+        <p class="lead-text" data-i18n="faq.a6">Entre em contacto connosco para avaliarmos a disponibilidade e as necessidades do teu cão.</p>
+      </details>
+    </section>
+
+    <section id="contacts" class="section" aria-labelledby="contact-heading">
+      <h3 id="contact-heading" data-i18n="contact.heading">QUERES MARCAR A AVALIAÇÃO DO TEU CÃO?</h3>
+
+      <div class="contact-methods">
+        <div class="contact-line whatsapp-line">
+          <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="contact-link whatsapp-cta" aria-label="Contactar por WhatsApp - Preferencial" data-i18n-aria="contact.whatsappAria">
+            <img src="assets/logos/whatsapp.webp" alt="whatsapp" class="contact-icon whatsapp-icon" />
+            <span class="contact-text" data-i18n="contact.whatsappLabel">WHATSAPP</span>
+            <span class="badge" data-i18n="contact.badge">Preferencial</span>
+          </a>
+        </div>
+
+        <div class="contact-line">
+          <a href="mailto:caoderuageral@gmail.com" class="contact-link">
+            <img src="assets/logos/o-email.webp" alt="email" class="contact-icon" />
+            <span class="contact-text">caoderuageral@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="contact-line">
+          <a href="https://instagram.com/cao_na_rua" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <img src="assets/logos/instagram.webp" alt="instagram" class="contact-icon" />
+            <span class="contact-text">@cao_na_rua</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="contact-sub" data-i18n="contact.or">ou então</p>
+
+      <div class="form-cta">
+        <a class="button" href="formulario.html" data-i18n="contact.formButton">Preenche o formulário</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+
+  <div class="footer-columns">
+      <!-- Horários -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.scheduleTitle">Horários de Funcionamento</h4>
+        <div class="footer-horario">
+          <span data-i18n="footer.scheduleLine1">Segunda a Sexta: 7h30-18.30h</span>
+          <span data-i18n="footer.scheduleLine2">Encerra aos fins de semana e feriados.</span>
+        </div>
+      </div>
+      <!-- Informações -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.infoLabel">Informações</h4>
+        <div class="footer-contact-line">
+          <span data-i18n="footer.faqPrompt">Perguntas frequentes: <a href="faq.html" class="footer-link-faq">FAQs</a></span>
+        </div>
+        <div class="footer-contact-line">
+          <a href="politica-privacidade.html" class="footer-link-privacy" data-i18n="footer.privacy">Política de Privacidade</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="politica-cookies.html" class="footer-link-privacy" data-i18n="footer.cookies">Política de Cookies</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="termos-condicoes.html" class="footer-link-terms" data-i18n="footer.terms">Termos e Condições</a>
+        </div>
+      </div>
+      <!-- Redes Sociais e Contactos -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.socialContactsTitle">Redes Sociais e Contactos</h4>
+        <div class="footer-contact-line">
+          <img src="assets/logos/whatsapp.webp" alt="whatsapp" class="footer-icon footer-icon-whatsapp">
+          <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="footer-link-whatsapp">+351 934 527 652</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/instagram.webp" alt="instagram" class="footer-icon footer-icon-instagram">
+          <a href="https://instagram.com/cao_na_rua" target="_blank" rel="noopener noreferrer" class="footer-link-instagram">@cao_na_rua</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/facebook2.webp" alt="facebook" class="footer-icon footer-icon-facebook">
+          <a href="https://www.facebook.com/caoderualisboa/" target="_blank" rel="noopener noreferrer" class="footer-link-facebook">Cão de Rua Lisboa</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/o-email.webp" alt="email" class="footer-icon footer-icon-mail">
+          <a href="mailto:caoderuageral@gmail.com" class="footer-link-mail">caoderuageral@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <small>© <span id="year"></span> Cão na Rua</small>
+    </footer>
+    <script>
+      window.translations = {
+        pt: {
+          pageTitle: "Cão na Rua — Estadias Familiares",
+          nav: {
+            menu: "Menu",
+            home: "Início 🏠",
+            services: "Serviços 🐾",
+            servicesLabel: "Serviços",
+            daycare: "Creche",
+            natureWalks: "Passeios na Natureza",
+            individualWalks: "Passeios Individuais",
+            familyStays: "Estadias Familiares",
+            transport: "Transporte",
+            ourDogs: "Os Nossos Cães 🐕",
+            team: "Equipa 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contacta-nos 📞"
+          },
+          hero: {
+            title: "Estadias Familiares",
+            subtitle: "O teu cão ou gato fica em casa de família, com todo o carinho e atenção que merece"
+          },
+          sections: {
+            meaning: {
+              title: "O que significa estadia familiar?",
+              text: "A estadia é feita na habitação própria das tias (Lisboa), onde o teu cão ou gato é integrado como família, com muito amor à mistura."
+            },
+            routine: {
+              title: "Qual a rotina?",
+              text: "<strong>Para cães:</strong> No período de segunda a quinta, o teu cão vai frequentar a nossa creche e fazer passeios na natureza. Ao fim de semana tiramos proveito da mãe natureza e percorremos trilhos, ribeiros, praias.<br><strong>Para gatos:</strong> Respeitamos a sua natureza independente, proporcionando um ambiente tranquilo e seguro com muito carinho e brincadeiras.<br>Algo que não abdicamos: <strong>DESCANSO e MIMO</strong>."
+            },
+            entry: {
+              title: "Horário de entrada",
+              text: "As entradas para estadia são realizadas pela manhã, em horário previamente combinado para garantir uma receção tranquila e personalizada ao teu cão ou gato.<br>Pedimos que respeite este horário para facilitar a adaptação e o bem-estar do animal desde o primeiro momento."
+            },
+            night: {
+              title: "Onde fica o meu animal no período da noite?",
+              text: "Não fica numa box no exterior. O teu cão ou gato é livre de descansar em qualquer divisão interior da nossa casa (sofá, camas, etc), com todo o conforto."
+            }
+          },
+          faq: {
+            heading: "FAQ",
+            q1: "O que é uma estadia familiar?",
+            a1: "É quando o teu cão ou gato fica hospedado na casa de uma cuidadora, sendo tratado como membro da família, com conforto, carinho e atenção individualizada.",
+            q2: "O meu animal vai ficar sozinho?",
+            a2: "Não! O teu cão ou gato terá companhia humana e, se for compatível, poderá conviver com outros animais da casa.",
+            q3: "Como funciona a alimentação?",
+            a3: "A alimentação é feita conforme as orientações do tutor, utilizando a ração ou dieta habitual do animal.",
+            q4: "O que devo levar para a estadia?",
+            a4: "Por favor, contacta-nos para receberes uma lista personalizada do que deves trazer para a estadia do teu cão ou gato.",
+            q5: "O meu animal precisa de uma avaliação prévia?",
+            a5: "Sim, todas as estadias requerem uma avaliação inicial para garantir que o teu animal se adapta bem ao ambiente familiar e às rotinas da cuidadora.",
+            q6: "Como agendar uma estadia?",
+            a6: "Entre em contacto connosco para avaliarmos a disponibilidade e as necessidades do teu animal."
+          },
+          contact: {
+            heading: "QUERES MARCAR A AVALIAÇÃO DO TEU ANIMAL?",
+            formButton: "Preenche o formulário",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferencial",
+            whatsappAria: "Contactar por WhatsApp - Preferencial"
+          },
+          footer: {
+            scheduleTitle: "Horários de Funcionamento",
+            scheduleLine1: "Segunda a Sexta: 7h30-18.30h",
+            scheduleLine2: "Encerra aos fins de semana e feriados.",
+            infoLabel: "Informações",
+            faqPrompt: "Perguntas frequentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidade",
+            cookies: "Política de Cookies",
+            terms: "Termos e Condições",
+            socialContactsTitle: "Redes Sociais e Contactos"
+          }
+        },
+        en: {
+          pageTitle: "Cão na Rua — Family Stays",
+          nav: {
+            menu: "Menu",
+            home: "Home 🏠",
+            services: "Services 🐾",
+            servicesLabel: "Services",
+            daycare: "Daycare",
+            natureWalks: "Nature Walks",
+            individualWalks: "Individual Walks",
+            familyStays: "Family Stays",
+            transport: "Transportation",
+            ourDogs: "Our Dogs 🐕",
+            team: "Team 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contact Us 📞"
+          },
+          hero: {
+            title: "Family Stays",
+            subtitle: "Your dog or cat stays in a family home, with all the affection and attention they deserve"
+          },
+          sections: {
+            meaning: {
+              title: "What does a family stay mean?",
+              text: "The stay takes place in the carers' own home (Lisbon), where your dog or cat is welcomed as part of the family, with plenty of love."
+            },
+            routine: {
+              title: "What is the routine?",
+              text: "<strong>For dogs:</strong> From Monday to Thursday your dog attends our daycare and enjoys nature walks. At the weekend we make the most of the outdoors and explore trails, streams and beaches.<br><strong>For cats:</strong> We respect their independent nature, providing a calm and secure environment with plenty of affection and play.<br>Something we never skip: <strong>REST and CUDDLES</strong>."
+            },
+            entry: {
+              title: "Check-in time",
+              text: "Check-ins happen in the morning at a pre-arranged time to guarantee a calm and personalised welcome for your dog or cat.<br>Please respect this schedule to support their adaptation and well-being from the very first moment."
+            },
+            night: {
+              title: "Where does my pet stay overnight?",
+              text: "There are no outdoor kennels. Your dog or cat is free to rest in any indoor room of our home (sofa, beds, etc.), in complete comfort."
+            }
+          },
+          faq: {
+            heading: "FAQ",
+            q1: "What is a family stay?",
+            a1: "Your dog or cat stays in a carer's home and is treated like a family member, with comfort, affection and individual attention.",
+            q2: "Will my pet be left alone?",
+            a2: "No! Your dog or cat has human company and, if compatible, can socialise with other resident pets.",
+            q3: "How is feeding handled?",
+            a3: "Meals follow the guardian's instructions, using your pet's usual food.",
+            q4: "What should I bring for the stay?",
+            a4: "Please contact us to receive a personalised checklist of what to bring for your dog or cat.",
+            q5: "Does my pet need a prior assessment?",
+            a5: "Yes, every stay includes an initial assessment to ensure your pet feels comfortable with the family environment and routines.",
+            q6: "How do I book a stay?",
+            a6: "Get in touch with us to check availability and your pet's needs."
+          },
+          contact: {
+            heading: "WANT TO SCHEDULE YOUR PET'S ASSESSMENT?",
+            formButton: "Fill in the form",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferred",
+            whatsappAria: "Contact via WhatsApp - Preferred"
+          },
+          footer: {
+            scheduleTitle: "Operating Hours",
+            scheduleLine1: "Monday to Friday: 7:30-18:30",
+            scheduleLine2: "Closed on weekends and public holidays.",
+            infoLabel: "Information:",
+            faqPrompt: "Frequently asked questions: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Privacy Policy",
+            cookies: "Cookie Policy",
+            terms: "Terms & Conditions",
+            socialContactsTitle: "Social Media & Contacts"
+          }
+        },
+        es: {
+          pageTitle: "Cão na Rua — Estancias Familiares",
+          nav: {
+            menu: "Menú",
+            home: "Inicio 🏠",
+            services: "Servicios 🐾",
+            servicesLabel: "Servicios",
+            daycare: "Guardería",
+            natureWalks: "Paseos en la Naturaleza",
+            individualWalks: "Paseos Individuales",
+            familyStays: "Estancias Familiares",
+            transport: "Transportes",
+            ourDogs: "Nuestros Perros 🐕",
+            team: "Equipo 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contáctanos 📞"
+          },
+          hero: {
+            title: "Estancias Familiares",
+            subtitle: "Tu perro o gato se queda en una casa familiar, con todo el cariño y atención que merece"
+          },
+          sections: {
+            meaning: {
+              title: "¿Qué significa una estancia familiar?",
+              text: "La estancia se realiza en la casa de las cuidadoras (Lisboa), donde tu perro o gato se integra como parte de la familia, con mucho amor."
+            },
+            routine: {
+              title: "¿Cuál es la rutina?",
+              text: "<strong>Para perros:</strong> De lunes a jueves tu perro asiste a nuestra guardería y disfruta de paseos por la naturaleza. El fin de semana aprovechamos la madre naturaleza y recorremos senderos, arroyos y playas.<br><strong>Para gatos:</strong> Respetamos su naturaleza independiente, proporcionando un ambiente tranquilo y seguro con mucho cariño y juegos.<br>Algo innegociable: <strong>DESCANSO y MIMOS</strong>."
+            },
+            entry: {
+              title: "Horario de entrada",
+              text: "Las entradas se realizan por la mañana, en un horario acordado previamente para garantizar una recepción tranquila y personalizada para tu perro o gato.<br>Te pedimos que respetes este horario para facilitar la adaptación y el bienestar del animal desde el primer momento."
+            },
+            night: {
+              title: "¿Dónde duerme mi mascota por la noche?",
+              text: "No dormirá en un box exterior. Tu perro o gato es libre de descansar en cualquier estancia interior de nuestro hogar (sofá, camas, etc.), con todo el confort."
+            }
+          },
+          faq: {
+            heading: "FAQ",
+            q1: "¿Qué es una estancia familiar?",
+            a1: "Tu perro o gato se hospeda en la casa de una cuidadora y es tratado como un miembro de la familia, con comodidad, cariño y atención individual.",
+            q2: "¿Mi mascota se quedará sola?",
+            a2: "¡No! Tu perro o gato tendrá compañía humana y, si es compatible, podrá convivir con otras mascotas de la casa.",
+            q3: "¿Cómo se gestiona la alimentación?",
+            a3: "La alimentación se realiza según las indicaciones del tutor, utilizando su alimento habitual.",
+            q4: "¿Qué debo llevar para la estancia?",
+            a4: "Contáctanos para recibir una lista personalizada de lo que debes traer para tu perro o gato.",
+            q5: "¿Mi mascota necesita una evaluación previa?",
+            a5: "Sí, todas las estancias requieren una evaluación inicial para garantizar que tu mascota se adapta bien al entorno familiar y a las rutinas de la cuidadora.",
+            q6: "¿Cómo reservo una estancia?",
+            a6: "Ponte en contacto con nosotros para comprobar la disponibilidad y las necesidades de tu mascota."
+          },
+          contact: {
+            heading: "¿QUIERES PROGRAMAR LA EVALUACIÓN DE TU MASCOTA?",
+            formButton: "Completa el formulario",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferente",
+            whatsappAria: "Contactar por WhatsApp - Preferente"
+          },
+          footer: {
+            scheduleTitle: "Horarios de Funcionamiento",
+            scheduleLine1: "Lunes a viernes: 7h30-18h30",
+            scheduleLine2: "Cerrado fines de semana y festivos.",
+            infoLabel: "Información:",
+            faqPrompt: "Preguntas frecuentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidad",
+            cookies: "Política de Cookies",
+            terms: "Términos y Condiciones",
+            socialContactsTitle: "Redes sociales y contactos"
+          }
+        },
+        fr: {
+          pageTitle: "Cão na Rua — Séjours Familiaux",
+          nav: {
+            menu: "Menu",
+            home: "Accueil 🏠",
+            services: "Services 🐾",
+            servicesLabel: "Services",
+            daycare: "Garderie",
+            natureWalks: "Promenades Nature",
+            individualWalks: "Promenades Individuelles",
+            familyStays: "Séjours Familiaux",
+            transport: "Transports",
+            ourDogs: "Nos Chiens 🐕",
+            team: "Équipe 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contactez-nous 📞"
+          },
+          hero: {
+            title: "Séjours Familiaux",
+            subtitle: "Votre chien ou chat séjourne dans une maison familiale, avec toute l'affection et l'attention qu'il mérite"
+          },
+          sections: {
+            meaning: {
+              title: "Que signifie un séjour familial ?",
+              text: "Le séjour se déroule au domicile des tatas (Lisbonne), où votre chien ou chat est intégré comme un membre de la famille, avec beaucoup d'amour."
+            },
+            routine: {
+              title: "Quelle est la routine ?",
+              text: "<strong>Pour les chiens:</strong> Du lundi au jeudi, votre chien fréquente notre garderie et profite de promenades dans la nature. Le week-end, nous profitons de la nature et parcourons sentiers, ruisseaux et plages.<br><strong>Pour les chats:</strong> Nous respectons leur nature indépendante, en offrant un environnement calme et sécurisé avec beaucoup d'affection et de jeux.<br>Notre priorité absolue : <strong>REPOS et CÂLINS</strong>."
+            },
+            entry: {
+              title: "Heure d'arrivée",
+              text: "Les arrivées ont lieu le matin, à une heure convenue à l'avance afin d'offrir un accueil calme et personnalisé à votre chien ou chat.<br>Nous vous demandons de respecter cet horaire pour favoriser son adaptation et son bien-être dès le premier instant."
+            },
+            night: {
+              title: "Où dort mon animal la nuit ?",
+              text: "Il ne dort pas dans un box extérieur. Votre chien ou chat est libre de se reposer dans n'importe quelle pièce de notre maison (canapé, lits, etc.), dans un confort total."
+            }
+          },
+          faq: {
+            heading: "FAQ",
+            q1: "Qu'est-ce qu'un séjour familial ?",
+            a1: "Votre chien ou chat est hébergé chez une pet sitter et traité comme un membre de la famille, avec confort, affection et attention personnalisée.",
+            q2: "Mon animal sera-t-il laissé seul ?",
+            a2: "Non ! Votre chien ou chat profite d'une présence humaine et, s'il est compatible, peut cohabiter avec les autres animaux de la maison.",
+            q3: "Comment se passe l'alimentation ?",
+            a3: "Les repas suivent les indications du tuteur, en utilisant l'alimentation habituelle de votre animal.",
+            q4: "Que dois-je apporter pour le séjour ?",
+            a4: "Contactez-nous pour recevoir une liste personnalisée de ce qu'il faut apporter pour votre chien ou chat.",
+            q5: "Mon animal a-t-il besoin d'une évaluation préalable ?",
+            a5: "Oui, chaque séjour comprend une évaluation initiale afin d'assurer que votre animal s'adapte bien à l'environnement familial et aux routines de la pet sitter.",
+            q6: "Comment réserver un séjour ?",
+            a6: "Contactez-nous pour vérifier les disponibilités et les besoins de votre animal."
+          },
+          contact: {
+            heading: "VOUS VOULEZ PLANIFIER L'ÉVALUATION DE VOTRE ANIMAL ?",
+            formButton: "Remplissez le formulaire",
+            or: "ou então",
+            whatsappLabel: "WHATSAPP",
+            badge: "Prioritaire",
+            whatsappAria: "Contacter via WhatsApp - Prioritaire"
+          },
+          footer: {
+            scheduleTitle: "Horaires d'Ouverture",
+            scheduleLine1: "Du lundi au vendredi : 7h30-18h30",
+            scheduleLine2: "Fermé les week-ends et jours fériés.",
+            infoLabel: "Informations :",
+            faqPrompt: "Questions fréquentes : <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Politique de Confidentialité",
+            cookies: "Politique de Cookies",
+            terms: "Termes et Conditions",
+            socialContactsTitle: "Réseaux sociaux et contacts"
+          }
+        }
+      };
+    </script>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+      <img src="assets/logos/whatsapp.webp" alt="WhatsApp" />
+    </a>
+
+        <!-- Animation libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="js/lang-switcher.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dog-effects.js"></script>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      // Nav toggle for mobile and accessible dropdown aria updates
+      (function(){
+        var toggle = document.querySelector('.nav-toggle');
+        var menu = document.getElementById('main-menu');
+        if(toggle && menu){
+          toggle.addEventListener('click', function(){
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            menu.classList.toggle('show');
+          });
+        }
+        var backBtn = document.querySelector('.menu-back-btn');
+        if(backBtn && toggle) {
+          backBtn.addEventListener('click', function(){ toggle.click(); });
+        }
+        // handle submenu aria-expanded on focus/click for keyboard users
+        var dropdownToggles = document.querySelectorAll('.has-dropdown > a');
+        dropdownToggles.forEach(function(d){
+          d.addEventListener('click', function(e){
+            // on small devices, allow toggling the submenu
+            var parent = this.parentElement;
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            if(window.matchMedia && window.matchMedia('(max-width:720px)').matches){
+              var dd = parent.querySelector('.dropdown');
+              if(dd) dd.style.display = expanded ? 'none' : 'flex';
+              e.preventDefault();
+            }
+          });
+        });
+      })();
+
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registado com sucesso:', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('Falha ao registar Service Worker:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

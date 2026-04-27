@@ -1,0 +1,61 @@
+/* ============================================================
+   animations.css — scroll reveal & particle layer styles
+   ============================================================ */
+
+/* Hero canvas sits behind the dark overlay and copy */
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* FOUC prevention: keep animated elements visible if JS never loads.
+   Once animations.js runs it adds .js-loaded to <body>, which lets
+   GSAP control opacity. Without it elements are always visible. */
+.service-card,
+.team-card,
+.trust-card,
+.trust-card-icon,
+.services-title,
+.team-title,
+.philosophy-section h2,
+.philosophy-divider,
+.philosophy-text,
+.philosophy-goal,
+#contacts h3,
+.form-cta,
+.contact-line,
+.partnerships-section,
+.page-title,
+.page-subtitle,
+.info-card,
+.side-box,
+.service-card-flex,
+.faq h3,
+.faq-item,
+.faq details {
+  opacity: 1;
+}
+
+/* Os Nossos Cães page: GSAP handles the hover, suppress CSS version */
+.js-loaded .dog-card {
+  transition: box-shadow 0.2s;  /* keep shadow transition, let GSAP own transform */
+}
+.js-loaded .dog-card:hover {
+  transform: none;
+}
+
+/* Reduced-motion: kill all durations site-wide */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

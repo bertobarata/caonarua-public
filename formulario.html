@@ -1,0 +1,1334 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Preload critical resources -->
+  <link rel="preload" href="css/styles.css?v=19" as="style" />
+    
+    <title>Formulário — Cão na Rua</title>
+  <link rel="stylesheet" href="css/styles.css?v=19" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="shortcut icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="apple-touch-icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <a href="index.html#home" class="logo-link" aria-label="Início">
+          <img src="assets/logos/CNR-logotipo-removebg.webp" alt="CNR - logotipo" class="logo" />
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" data-i18n="nav.menu">Menu</button>
+        <ul id="main-menu">
+          <li><a href="index.html#home" class="home-btn" data-i18n="nav.home">Início 🏠</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#services" aria-haspopup="true" aria-expanded="false" data-i18n="nav.services">Serviços 🐾</a>
+              <ul class="dropdown" aria-label="Serviços" data-i18n-aria="nav.servicesLabel">
+                <li><a href="creche.html" data-i18n="nav.daycare">Creche</a></li>
+                <li><a href="passeios-individuais.html" data-i18n="nav.individualWalks">Passeios Individuais</a></li>
+                <li><a href="estadias-familiares.html" data-i18n="nav.familyStays">Estadias Familiares</a></li>
+                <li><a href="transportes.html" data-i18n="nav.transport">Transporte</a></li>
+                <li><a href="passeiosnanatureza.html" data-i18n="nav.natureWalks">Passeios na Natureza</a></li>
+                <li><a href="casamentos.html" data-i18n="nav.weddings">Cães em Casamentos</a></li>
+              </ul>
+          </li>
+          <li><a href="caes-do-cao-na-rua.html" data-i18n="nav.ourDogs">Os Nossos Cães 🐕</a></li>
+          <li><a href="index.html#team" data-i18n="nav.team">Equipa 👩‍⚕️</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ ❓</a></li>
+          <li><a class="cta" href="index.html#contacts" data-i18n="nav.contact">Contacta-nos 📞</a></li>
+            <li class="menu-back-item"><button class="menu-back-btn" aria-label="Fechar menu">&#x203A;</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="form-page">
+      <div class="form-container">
+        <h1 data-i18n="form.hero.title">Formulário Cão na Rua</h1>
+  <p class="form-intro" data-i18n="form.hero.subtitle">Preenche o formulário, sem compromisso e obtém uma resposta em menos de 24 horas</p>
+
+        <form id="infoForm" class="contact-form" action="https://formspree.io/f/xkgpbpnz" method="POST">
+        <div class="row">
+          <label><span data-i18n="form.labels.firstName">Nome *</span><br><input type="text" name="nome" id="nome" required></label>
+          <label><span data-i18n="form.labels.lastName">Apelido *</span><br><input type="text" name="apelido" id="apelido" required></label>
+        </div>
+
+        <div class="row">
+          <label><span data-i18n="form.labels.phone">Telemóvel / Telefone *</span><br><input type="tel" name="telefone" id="telefone" placeholder="9######## ou 2########" pattern="[29][0-9]{8}" title="Formato: 9 dígitos começando por 9 ou 2 (ex: 912345678 ou 212345678)" required></label>
+          <label><span data-i18n="form.labels.email">Email *</span><br><input type="email" name="email" id="email" required></label>
+        </div>
+
+        <div class="row">
+          <label><span data-i18n="form.labels.address">Endereço *</span><br><input type="text" name="endereco" id="endereco" required></label>
+          <label><span data-i18n="form.labels.city">Cidade *</span><br><input type="text" name="cidade" id="cidade" required></label>
+        </div>
+
+        <div class="row">
+          <label><span data-i18n="form.labels.postalCode">Código postal *</span><br><input type="text" name="codigo_postal" id="codigo_postal" required></label>
+          <label><span data-i18n="form.labels.country">País *</span><br>
+            <select name="pais" id="pais" required>
+              <option value="Portugal" selected>Portugal</option>
+              <option value="Afeganistão">Afeganistão</option>
+              <option value="África do Sul">África do Sul</option>
+              <option value="Albânia">Albânia</option>
+              <option value="Alemanha">Alemanha</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Angola">Angola</option>
+              <option value="Antígua e Barbuda">Antígua e Barbuda</option>
+              <option value="Arábia Saudita">Arábia Saudita</option>
+              <option value="Argélia">Argélia</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Arménia">Arménia</option>
+              <option value="Austrália">Austrália</option>
+              <option value="Áustria">Áustria</option>
+              <option value="Azerbaijão">Azerbaijão</option>
+              <option value="Bahamas">Bahamas</option>
+              <option value="Bangladeche">Bangladeche</option>
+              <option value="Barbados">Barbados</option>
+              <option value="Barém">Barém</option>
+              <option value="Bélgica">Bélgica</option>
+              <option value="Belize">Belize</option>
+              <option value="Benim">Benim</option>
+              <option value="Bielorrússia">Bielorrússia</option>
+              <option value="Bolívia">Bolívia</option>
+              <option value="Bósnia e Herzegovina">Bósnia e Herzegovina</option>
+              <option value="Botsuana">Botsuana</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Brunei">Brunei</option>
+              <option value="Bulgária">Bulgária</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Burundi">Burundi</option>
+              <option value="Butão">Butão</option>
+              <option value="Cabo Verde">Cabo Verde</option>
+              <option value="Camarões">Camarões</option>
+              <option value="Camboja">Camboja</option>
+              <option value="Canadá">Canadá</option>
+              <option value="Catar">Catar</option>
+              <option value="Cazaquistão">Cazaquistão</option>
+              <option value="Chade">Chade</option>
+              <option value="Chile">Chile</option>
+              <option value="China">China</option>
+              <option value="Chipre">Chipre</option>
+              <option value="Colômbia">Colômbia</option>
+              <option value="Comores">Comores</option>
+              <option value="Congo">Congo</option>
+              <option value="Coreia do Norte">Coreia do Norte</option>
+              <option value="Coreia do Sul">Coreia do Sul</option>
+              <option value="Costa do Marfim">Costa do Marfim</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Croácia">Croácia</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Dinamarca">Dinamarca</option>
+              <option value="Djibuti">Djibuti</option>
+              <option value="Dominica">Dominica</option>
+              <option value="Egito">Egito</option>
+              <option value="Emirados Árabes Unidos">Emirados Árabes Unidos</option>
+              <option value="Equador">Equador</option>
+              <option value="Eritreia">Eritreia</option>
+              <option value="Eslováquia">Eslováquia</option>
+              <option value="Eslovénia">Eslovénia</option>
+              <option value="Espanha">Espanha</option>
+              <option value="Estados Unidos">Estados Unidos</option>
+              <option value="Estónia">Estónia</option>
+              <option value="Etiópia">Etiópia</option>
+              <option value="Fiji">Fiji</option>
+              <option value="Filipinas">Filipinas</option>
+              <option value="Finlândia">Finlândia</option>
+              <option value="França">França</option>
+              <option value="Gabão">Gabão</option>
+              <option value="Gâmbia">Gâmbia</option>
+              <option value="Gana">Gana</option>
+              <option value="Geórgia">Geórgia</option>
+              <option value="Granada">Granada</option>
+              <option value="Grécia">Grécia</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Guiana">Guiana</option>
+              <option value="Guiné">Guiné</option>
+              <option value="Guiné-Bissau">Guiné-Bissau</option>
+              <option value="Guiné Equatorial">Guiné Equatorial</option>
+              <option value="Haiti">Haiti</option>
+              <option value="Honduras">Honduras</option>
+              <option value="Hungria">Hungria</option>
+              <option value="Iémen">Iémen</option>
+              <option value="Ilhas Marshall">Ilhas Marshall</option>
+              <option value="Ilhas Salomão">Ilhas Salomão</option>
+              <option value="Índia">Índia</option>
+              <option value="Indonésia">Indonésia</option>
+              <option value="Irão">Irão</option>
+              <option value="Iraque">Iraque</option>
+              <option value="Irlanda">Irlanda</option>
+              <option value="Islândia">Islândia</option>
+              <option value="Israel">Israel</option>
+              <option value="Itália">Itália</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="Japão">Japão</option>
+              <option value="Jordânia">Jordânia</option>
+              <option value="Koweit">Koweit</option>
+              <option value="Laos">Laos</option>
+              <option value="Lesoto">Lesoto</option>
+              <option value="Letónia">Letónia</option>
+              <option value="Líbano">Líbano</option>
+              <option value="Libéria">Libéria</option>
+              <option value="Líbia">Líbia</option>
+              <option value="Listenstaine">Listenstaine</option>
+              <option value="Lituânia">Lituânia</option>
+              <option value="Luxemburgo">Luxemburgo</option>
+              <option value="Macedónia do Norte">Macedónia do Norte</option>
+              <option value="Madagáscar">Madagáscar</option>
+              <option value="Malásia">Malásia</option>
+              <option value="Malávi">Malávi</option>
+              <option value="Maldivas">Maldivas</option>
+              <option value="Mali">Mali</option>
+              <option value="Malta">Malta</option>
+              <option value="Marrocos">Marrocos</option>
+              <option value="Maurícia">Maurícia</option>
+              <option value="Mauritânia">Mauritânia</option>
+              <option value="México">México</option>
+              <option value="Mianmar">Mianmar</option>
+              <option value="Micronésia">Micronésia</option>
+              <option value="Moçambique">Moçambique</option>
+              <option value="Moldávia">Moldávia</option>
+              <option value="Mónaco">Mónaco</option>
+              <option value="Mongólia">Mongólia</option>
+              <option value="Montenegro">Montenegro</option>
+              <option value="Namíbia">Namíbia</option>
+              <option value="Nauru">Nauru</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Nicarágua">Nicarágua</option>
+              <option value="Níger">Níger</option>
+              <option value="Nigéria">Nigéria</option>
+              <option value="Noruega">Noruega</option>
+              <option value="Nova Zelândia">Nova Zelândia</option>
+              <option value="Omã">Omã</option>
+              <option value="Países Baixos">Países Baixos</option>
+              <option value="Palau">Palau</option>
+              <option value="Panamá">Panamá</option>
+              <option value="Papua-Nova Guiné">Papua-Nova Guiné</option>
+              <option value="Paquistão">Paquistão</option>
+              <option value="Paraguai">Paraguai</option>
+              <option value="Peru">Peru</option>
+              <option value="Polónia">Polónia</option>
+              <option value="Quirguistão">Quirguistão</option>
+              <option value="Quénia">Quénia</option>
+              <option value="Reino Unido">Reino Unido</option>
+              <option value="República Centro-Africana">República Centro-Africana</option>
+              <option value="República Checa">República Checa</option>
+              <option value="República Democrática do Congo">República Democrática do Congo</option>
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="Roménia">Roménia</option>
+              <option value="Ruanda">Ruanda</option>
+              <option value="Rússia">Rússia</option>
+              <option value="Samoa">Samoa</option>
+              <option value="Santa Lúcia">Santa Lúcia</option>
+              <option value="São Cristóvão e Neves">São Cristóvão e Neves</option>
+              <option value="São Marinho">São Marinho</option>
+              <option value="São Tomé e Príncipe">São Tomé e Príncipe</option>
+              <option value="São Vicente e Granadinas">São Vicente e Granadinas</option>
+              <option value="Senegal">Senegal</option>
+              <option value="Serra Leoa">Serra Leoa</option>
+              <option value="Sérvia">Sérvia</option>
+              <option value="Singapura">Singapura</option>
+              <option value="Síria">Síria</option>
+              <option value="Somália">Somália</option>
+              <option value="Sri Lanca">Sri Lanca</option>
+              <option value="Suazilândia">Suazilândia</option>
+              <option value="Sudão">Sudão</option>
+              <option value="Sudão do Sul">Sudão do Sul</option>
+              <option value="Suécia">Suécia</option>
+              <option value="Suíça">Suíça</option>
+              <option value="Suriname">Suriname</option>
+              <option value="Tailândia">Tailândia</option>
+              <option value="Tajiquistão">Tajiquistão</option>
+              <option value="Tanzânia">Tanzânia</option>
+              <option value="Timor-Leste">Timor-Leste</option>
+              <option value="Togo">Togo</option>
+              <option value="Tonga">Tonga</option>
+              <option value="Trindade e Tobago">Trindade e Tobago</option>
+              <option value="Tunísia">Tunísia</option>
+              <option value="Turcomenistão">Turcomenistão</option>
+              <option value="Turquia">Turquia</option>
+              <option value="Tuvalu">Tuvalu</option>
+              <option value="Ucrânia">Ucrânia</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Uruguai">Uruguai</option>
+              <option value="Usbequistão">Usbequistão</option>
+              <option value="Vanuatu">Vanuatu</option>
+              <option value="Vaticano">Vaticano</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Vietname">Vietname</option>
+              <option value="Zâmbia">Zâmbia</option>
+              <option value="Zimbabué">Zimbabué</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="row">
+          <label><span data-i18n="form.labels.petName">Nome do(a) Patudo(a) *</span><br><input type="text" name="nome_patudo" id="nome_patudo" required></label>
+          <label><span data-i18n="form.labels.age">Idade *</span><br><input type="text" name="idade" id="idade" required></label>
+        </div>
+
+        <div class="row">
+          <label><span data-i18n="form.labels.breed">Raça *</span><br><input type="text" name="raca" id="raca" placeholder="Ex: Labrador, Golden Retriever" required></label>
+        </div>
+
+        <div class="row">
+          <label><span data-i18n="form.labels.size">Porte *</span><br>
+            <select name="porte" id="porte" required>
+              <option value="" data-i18n="form.options.sizePrompt">Selecione o porte</option>
+              <option value="Miniatura (até 3 kg)" data-i18n="form.options.sizeMini">Miniatura (até 3 kg)</option>
+              <option value="Pequeno (3-10 kg)" data-i18n="form.options.sizeSmall">Pequeno (3-10 kg)</option>
+              <option value="Médio (10-25 kg)" data-i18n="form.options.sizeMedium">Médio (10-25 kg)</option>
+              <option value="Grande (25-45 kg)" data-i18n="form.options.sizeLarge">Grande (25-45 kg)</option>
+              <option value="Gigante (acima de 45 kg)" data-i18n="form.options.sizeGiant">Gigante (acima de 45 kg)</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset>
+          <legend data-i18n="form.sections.gender">Sexo *</legend>
+          <label><input type="radio" name="sexo" value="Feminino" required> <span data-i18n="form.options.female">Feminino</span></label>
+          <label><input type="radio" name="sexo" value="Masculino" required> <span data-i18n="form.options.male">Masculino</span></label>
+        </fieldset>
+
+        <fieldset>
+          <legend data-i18n="form.sections.daycare">Deseja creche?</legend>
+          <label><input type="radio" name="deseja_creche" value="Sim" id="crecheSim"> <span data-i18n="form.options.yes">Sim</span></label>
+          <label><input type="radio" name="deseja_creche" value="Não" id="crecheNao" checked> <span data-i18n="form.options.no">Não</span></label>
+        </fieldset>
+
+        <fieldset id="diasCrecheFieldset" class="hidden">
+            <legend data-i18n="form.sections.daycareDays">Dias de creche pretendidos:</legend>
+            <label><input type="checkbox" name="dias_creche" value="2ª feira"> <span data-i18n="form.weekdays.monday">2ª feira</span></label>
+            <label><input type="checkbox" name="dias_creche" value="3ª feira"> <span data-i18n="form.weekdays.tuesday">3ª feira</span></label>
+            <label><input type="checkbox" name="dias_creche" value="4ª feira"> <span data-i18n="form.weekdays.wednesday">4ª feira</span></label>
+            <label><input type="checkbox" name="dias_creche" value="5ª feira"> <span data-i18n="form.weekdays.thursday">5ª feira</span></label>
+            <label><input type="checkbox" name="dias_creche" value="6ª feira"> <span data-i18n="form.weekdays.friday">6ª feira</span></label>
+        </fieldset>
+
+        <fieldset>
+          <legend data-i18n="form.sections.walks">Deseja passeios individuais?</legend>
+          <label><input type="radio" name="deseja_passeios" value="Sim" id="passeiosSim"> <span data-i18n="form.options.yes">Sim</span></label>
+          <label><input type="radio" name="deseja_passeios" value="Não" id="passeiosNao" checked> <span data-i18n="form.options.no">Não</span></label>
+        </fieldset>
+
+        <fieldset id="diasPasseiosFieldset" class="hidden">
+            <legend data-i18n="form.sections.walkDays">Dias de passeios pretendidos:</legend>
+            <label><input type="checkbox" name="dias_passeios" value="2ª feira"> <span data-i18n="form.weekdays.monday">2ª feira</span></label>
+            <label><input type="checkbox" name="dias_passeios" value="3ª feira"> <span data-i18n="form.weekdays.tuesday">3ª feira</span></label>
+            <label><input type="checkbox" name="dias_passeios" value="4ª feira"> <span data-i18n="form.weekdays.wednesday">4ª feira</span></label>
+            <label><input type="checkbox" name="dias_passeios" value="5ª feira"> <span data-i18n="form.weekdays.thursday">5ª feira</span></label>
+            <label><input type="checkbox" name="dias_passeios" value="6ª feira"> <span data-i18n="form.weekdays.friday">6ª feira</span></label>
+        </fieldset>
+
+        <fieldset>
+          <legend data-i18n="form.sections.stay">Deseja estadia?</legend>
+          <label><input type="radio" name="deseja_estadia" value="Sim" id="estadiaSim"> <span data-i18n="form.options.yes">Sim</span></label>
+          <label><input type="radio" name="deseja_estadia" value="Não" id="estadiaNao" checked> <span data-i18n="form.options.no">Não</span></label>
+        </fieldset>
+
+        <fieldset id="diasEstadiaFieldset" class="hidden">
+            <legend data-i18n="form.sections.stayPeriod">Período de estadia pretendido:</legend>
+            <div class="row">
+              <label><span data-i18n="form.labels.checkIn">Data de entrada*</span><br>
+                <input type="text" name="data_entrada_display" id="dataEntradaDisplay" placeholder="dd/mm/aaaa" readonly>
+                <input type="hidden" name="data_entrada" id="dataEntrada">
+              </label>
+              <label><span data-i18n="form.labels.checkOut">Data de saída*</span><br>
+                <input type="text" name="data_saida_display" id="dataSaidaDisplay" placeholder="dd/mm/aaaa" readonly>
+                <input type="hidden" name="data_saida" id="dataSaida">
+              </label>
+            </div>
+            <div id="customCalendar" class="custom-calendar hidden"></div>
+            <input type="hidden" name="dias_estadia" id="diasEstadiaHidden">
+        </fieldset>
+
+          <label><span data-i18n="form.labels.notes">Observações</span><br><textarea name="observacoes" id="observacoes" placeholder="Escreva aqui..." data-i18n-placeholder="form.placeholders.notes"></textarea></label>
+
+          <div class="form-actions">
+            <button type="submit" class="button" id="submitBtn" data-i18n="form.actions.submit">Enviar</button>
+          </div>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+
+        <p class="form-note" data-i18n="form.note">Ao enviar, a sua mensagem terá uma resposta em menos de 24 horas.</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <!-- Horários -->
+        <div class="footer-col">
+          <h4 class="footer-title" data-i18n="footer.scheduleTitle">Horários de Funcionamento</h4>
+          <div class="footer-horario">
+            <span data-i18n="footer.scheduleLine1">Segunda a Sexta: 7h30-18.30h</span>
+            <span data-i18n="footer.scheduleLine2">Encerra aos fins de semana e feriados.</span>
+          </div>
+        </div>
+        <!-- Informações -->
+        <div class="footer-col">
+          <h4 class="footer-title" data-i18n="footer.infoLabel">Informações</h4>
+          <div class="footer-contact-line">
+            <span data-i18n="footer.faqPrompt">Perguntas frequentes: <a href="faq.html" class="footer-link-faq">FAQs</a></span>
+          </div>
+          <div class="footer-contact-line">
+            <a href="politica-privacidade.html" class="footer-link-privacy" data-i18n="footer.privacy">Política de Privacidade</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="politica-cookies.html" class="footer-link-privacy" data-i18n="footer.cookies">Política de Cookies</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="termos-condicoes.html" class="footer-link-terms" data-i18n="footer.terms">Termos e Condições</a>
+          </div>
+        </div>
+        <!-- Redes Sociais e Contactos -->
+        <div class="footer-col">
+          <h4 class="footer-title" data-i18n="footer.socialContactsTitle">Redes Sociais e Contactos</h4>
+          <div class="footer-contact-line">
+            <img src="assets/logos/whatsapp.webp" alt="whatsapp" class="footer-icon footer-icon-whatsapp"> 
+            <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="footer-link-whatsapp">+351 934 527 652</a>
+          </div>
+          <div class="footer-contact-line">
+            <img src="assets/logos/instagram.webp" alt="instagram" class="footer-icon footer-icon-instagram"> 
+            <a href="https://instagram.com/cao_na_rua" target="_blank" rel="noopener noreferrer" class="footer-link-instagram">@cao_na_rua</a>
+          </div>
+          <div class="footer-contact-line">
+            <img src="assets/logos/facebook2.webp" alt="facebook" class="footer-icon footer-icon-facebook"> 
+            <a href="https://www.facebook.com/caoderualisboa/" target="_blank" rel="noopener noreferrer" class="footer-link-facebook">Cão de Rua Lisboa</a>
+          </div>
+          <div class="footer-contact-line">
+            <img src="assets/logos/o-email.webp" alt="email" class="footer-icon footer-icon-mail"> 
+            <a href="mailto:caoderuageral@gmail.com" class="footer-link-mail">caoderuageral@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <small>© <span id="year"></span> Cão na Rua</small>
+    </footer>
+
+    <script>
+      window.translations = {
+        pt: {
+          pageTitle: "Formulário — Cão na Rua",
+          nav: {
+            menu: "Menu",
+            home: "Início 🏠",
+            services: "Serviços 🐾",
+            servicesLabel: "Serviços",
+            daycare: "Creche",
+            natureWalks: "Passeios na Natureza",
+            individualWalks: "Passeios Individuais",
+            familyStays: "Estadias Familiares",
+            transport: "Transporte",
+            ourDogs: "Os Nossos Cães 🐕",
+            team: "Equipa 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contacta-nos 📞"
+          },
+          form: {
+            hero: {
+              title: "Formulário Cão na Rua",
+              subtitle: "Preenche o formulário, sem compromisso e obtém uma resposta em menos de 24 horas"
+            },
+            labels: {
+              firstName: "Nome *",
+              lastName: "Apelido *",
+              phone: "Telemóvel / Telefone *",
+              email: "Email *",
+              address: "Endereço *",
+              city: "Cidade *",
+              postalCode: "Código postal *",
+              country: "País *",
+              petName: "Nome do(a) Patudo(a) *",
+              age: "Idade *",
+              breed: "Raça *",
+              size: "Porte *",
+              checkIn: "Data de entrada*",
+              checkOut: "Data de saída*",
+              notes: "Observações"
+            },
+            sections: {
+              gender: "Sexo *",
+              daycare: "Deseja creche?",
+              daycareDays: "Dias de creche pretendidos:",
+              walks: "Deseja passeios individuais?",
+              walkDays: "Dias de passeios pretendidos:",
+              stay: "Deseja estadia?",
+              stayPeriod: "Período de estadia pretendido:"
+            },
+            options: {
+              sizePrompt: "Selecione o porte",
+              sizeMini: "Miniatura (até 3 kg)",
+              sizeSmall: "Pequeno (3-10 kg)",
+              sizeMedium: "Médio (10-25 kg)",
+              sizeLarge: "Grande (25-45 kg)",
+              sizeGiant: "Gigante (acima de 45 kg)",
+              female: "Feminino",
+              male: "Masculino",
+              yes: "Sim",
+              no: "Não"
+            },
+            weekdays: {
+              monday: "2ª feira",
+              tuesday: "3ª feira",
+              wednesday: "4ª feira",
+              thursday: "5ª feira",
+              friday: "6ª feira"
+            },
+            placeholders: {
+              notes: "Escreva aqui..."
+            },
+            actions: {
+              submit: "Enviar",
+              sending: "A enviar..."
+            },
+            messages: {
+              success: "✓ Mensagem enviada com sucesso! Receberá uma resposta em breve.",
+              error: "✗ Erro ao enviar a mensagem. Por favor, tenta novamente ou contacta-nos diretamente."
+            },
+            note: "Ao enviar, a sua mensagem terá uma resposta em menos de 24 horas.",
+            calendar: {
+              months: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+              weekdays: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+              rangeSeparator: " a ",
+              daySingular: "dia",
+              dayPlural: "dias",
+              prevLabel: "Mês anterior",
+              nextLabel: "Mês seguinte"
+            }
+          },
+          footer: {
+            scheduleTitle: "Horários de Funcionamento",
+            scheduleLine1: "Segunda a Sexta: 7h30-18.30h",
+            scheduleLine2: "Encerra aos fins de semana e feriados.",
+            infoLabel: "Informações",
+            faqPrompt: "Perguntas frequentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidade",
+            cookies: "Política de Cookies",
+            terms: "Termos e Condições",
+            socialContactsTitle: "Redes Sociais e Contactos"
+          }
+        },
+        en: {
+          pageTitle: "Cão na Rua — Form",
+          nav: {
+            menu: "Menu",
+            home: "Home 🏠",
+            services: "Services 🐾",
+            servicesLabel: "Services",
+            daycare: "Daycare",
+            natureWalks: "Nature Walks",
+            individualWalks: "Individual Walks",
+            familyStays: "Family Stays",
+            transport: "Transport",
+            ourDogs: "Our Dogs 🐕",
+            team: "Team 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contact Us 📞"
+          },
+          form: {
+            hero: {
+              title: "Cão na Rua Form",
+              subtitle: "Fill in the form with no obligation and receive a reply within 24 hours"
+            },
+            labels: {
+              firstName: "First name *",
+              lastName: "Last name *",
+              phone: "Phone *",
+              email: "Email *",
+              address: "Address *",
+              city: "City *",
+              postalCode: "Postal code *",
+              country: "Country *",
+              petName: "Dog's name *",
+              age: "Age *",
+              breed: "Breed *",
+              size: "Size *",
+              checkIn: "Check-in date*",
+              checkOut: "Check-out date*",
+              notes: "Notes"
+            },
+            sections: {
+              gender: "Sex *",
+              daycare: "Do you need daycare?",
+              daycareDays: "Preferred daycare days:",
+              walks: "Do you need individual walks?",
+              walkDays: "Preferred walk days:",
+              stay: "Do you need a stay?",
+              stayPeriod: "Preferred stay period:"
+            },
+            options: {
+              sizePrompt: "Select a size",
+              sizeMini: "Mini (up to 3 kg)",
+              sizeSmall: "Small (3-10 kg)",
+              sizeMedium: "Medium (10-25 kg)",
+              sizeLarge: "Large (25-45 kg)",
+              sizeGiant: "Giant (45+ kg)",
+              female: "Female",
+              male: "Male",
+              yes: "Yes",
+              no: "No"
+            },
+            weekdays: {
+              monday: "Monday",
+              tuesday: "Tuesday",
+              wednesday: "Wednesday",
+              thursday: "Thursday",
+              friday: "Friday"
+            },
+            placeholders: {
+              notes: "Write here..."
+            },
+            actions: {
+              submit: "Send",
+              sending: "Sending..."
+            },
+            messages: {
+              success: "✓ Message sent successfully! We'll reply soon.",
+              error: "✗ We couldn't send your message. Please try again or contact us directly."
+            },
+            note: "Once submitted, you'll receive a reply within 24 hours.",
+            calendar: {
+              months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+              weekdays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+              rangeSeparator: " to ",
+              daySingular: "day",
+              dayPlural: "days",
+              prevLabel: "Previous month",
+              nextLabel: "Next month"
+            }
+          },
+          footer: {
+            scheduleTitle: "Operating Hours",
+            scheduleLine1: "Monday to Friday: 7:30-18:30",
+            scheduleLine2: "Closed on weekends and public holidays.",
+            infoLabel: "Information:",
+            faqPrompt: "Frequently asked questions: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Privacy Policy",
+            cookies: "Cookie Policy",
+            terms: "Terms & Conditions",
+            socialContactsTitle: "Social Media & Contacts"
+          }
+        },
+        es: {
+          pageTitle: "Cão na Rua — Formulario",
+          nav: {
+            menu: "Menú",
+            home: "Inicio 🏠",
+            services: "Servicios 🐾",
+            servicesLabel: "Servicios",
+            daycare: "Guardería",
+            natureWalks: "Paseos en la Naturaleza",
+            individualWalks: "Paseos Individuales",
+            familyStays: "Estancias Familiares",
+            transport: "Transportes",
+            ourDogs: "Nuestros Perros 🐕",
+            team: "Equipo 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contáctanos 📞"
+          },
+          form: {
+            hero: {
+              title: "Formulario Cão na Rua",
+              subtitle: "Completa el formulario sin compromiso y recibe una respuesta en menos de 24 horas"
+            },
+            labels: {
+              firstName: "Nombre *",
+              lastName: "Apellidos *",
+              phone: "Teléfono *",
+              email: "Correo electrónico *",
+              address: "Dirección *",
+              city: "Ciudad *",
+              postalCode: "Código postal *",
+              country: "País *",
+              petName: "Nombre del perro *",
+              age: "Edad *",
+              breed: "Raza *",
+              size: "Tamaño *",
+              checkIn: "Fecha de entrada*",
+              checkOut: "Fecha de salida*",
+              notes: "Observaciones"
+            },
+            sections: {
+              gender: "Sexo *",
+              daycare: "¿Necesitas guardería?",
+              daycareDays: "Días de guardería preferidos:",
+              walks: "¿Necesitas paseos individuales?",
+              walkDays: "Días de paseo preferidos:",
+              stay: "¿Necesitas estancia?",
+              stayPeriod: "Periodo de estancia preferido:"
+            },
+            options: {
+              sizePrompt: "Selecciona el tamaño",
+              sizeMini: "Miniatura (hasta 3 kg)",
+              sizeSmall: "Pequeño (3-10 kg)",
+              sizeMedium: "Mediano (10-25 kg)",
+              sizeLarge: "Grande (25-45 kg)",
+              sizeGiant: "Gigante (más de 45 kg)",
+              female: "Hembra",
+              male: "Macho",
+              yes: "Sí",
+              no: "No"
+            },
+            weekdays: {
+              monday: "Lunes",
+              tuesday: "Martes",
+              wednesday: "Miércoles",
+              thursday: "Jueves",
+              friday: "Viernes"
+            },
+            placeholders: {
+              notes: "Escribe aquí..."
+            },
+            actions: {
+              submit: "Enviar",
+              sending: "Enviando..."
+            },
+            messages: {
+              success: "✓ ¡Mensaje enviado con éxito! Te responderemos en breve.",
+              error: "✗ No hemos podido enviar el mensaje. Vuelve a intentarlo o contáctanos directamente."
+            },
+            note: "Al enviar el formulario recibirás una respuesta en menos de 24 horas.",
+            calendar: {
+              months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+              weekdays: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+              rangeSeparator: " a ",
+              daySingular: "día",
+              dayPlural: "días",
+              prevLabel: "Mes anterior",
+              nextLabel: "Mes siguiente"
+            }
+          },
+          footer: {
+            scheduleTitle: "Horarios de Funcionamento",
+            scheduleLine1: "Lunes a viernes: 7h30-18h30",
+            scheduleLine2: "Cerrado fines de semana y festivos.",
+            infoLabel: "Información:",
+            faqPrompt: "Preguntas frecuentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidad",
+            cookies: "Política de Cookies",
+            terms: "Términos y Condiciones",
+            socialContactsTitle: "Redes sociales y contactos"
+          }
+        },
+        fr: {
+          pageTitle: "Cão na Rua — Formulaire",
+          nav: {
+            menu: "Menu",
+            home: "Accueil 🏠",
+            services: "Services 🐾",
+            servicesLabel: "Services",
+            daycare: "Garderie",
+            natureWalks: "Promenades Nature",
+            individualWalks: "Promenades Individuelles",
+            familyStays: "Séjours Familiaux",
+            transport: "Transports",
+            ourDogs: "Nos Chiens 🐕",
+            team: "Équipe 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contactez-nous 📞"
+          },
+          form: {
+            hero: {
+              title: "Formulaire Cão na Rua",
+              subtitle: "Remplissez le formulaire sans engagement et recevez une réponse en moins de 24 heures"
+            },
+            labels: {
+              firstName: "Prénom *",
+              lastName: "Nom *",
+              phone: "Téléphone *",
+              email: "Email *",
+              address: "Adresse *",
+              city: "Ville *",
+              postalCode: "Code postal *",
+              country: "Pays *",
+              petName: "Nom du chien *",
+              age: "Âge *",
+              breed: "Race *",
+              size: "Taille *",
+              checkIn: "Date d'arrivée*",
+              checkOut: "Date de départ*",
+              notes: "Remarques"
+            },
+            sections: {
+              gender: "Sexe *",
+              daycare: "Besoin de garderie ?",
+              daycareDays: "Jours de garderie souhaités :",
+              walks: "Besoin de promenades individuelles ?",
+              walkDays: "Jours de promenade souhaités :",
+              stay: "Besoin d'un séjour ?",
+              stayPeriod: "Période de séjour souhaitée :"
+            },
+            options: {
+              sizePrompt: "Sélectionnez la taille",
+              sizeMini: "Mini (jusqu'à 3 kg)",
+              sizeSmall: "Petit (3-10 kg)",
+              sizeMedium: "Moyen (10-25 kg)",
+              sizeLarge: "Grand (25-45 kg)",
+              sizeGiant: "Très grand (plus de 45 kg)",
+              female: "Femelle",
+              male: "Mâle",
+              yes: "Oui",
+              no: "Non"
+            },
+            weekdays: {
+              monday: "Lundi",
+              tuesday: "Mardi",
+              wednesday: "Mercredi",
+              thursday: "Jeudi",
+              friday: "Vendredi"
+            },
+            placeholders: {
+              notes: "Écrivez ici..."
+            },
+            actions: {
+              submit: "Envoyer",
+              sending: "Envoi..."
+            },
+            messages: {
+              success: "✓ Message envoyé avec succès ! Nous vous répondrons rapidement.",
+              error: "✗ Impossible d'envoyer votre message. Réessayez ou contactez-nous directement."
+            },
+            note: "Une réponse vous sera adressée en moins de 24 heures.",
+            calendar: {
+              months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+              weekdays: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
+              rangeSeparator: " au ",
+              daySingular: "jour",
+              dayPlural: "jours",
+              prevLabel: "Mois précédent",
+              nextLabel: "Mois suivant"
+            }
+          },
+          footer: {
+            scheduleTitle: "Horaires d'Ouverture",
+            scheduleLine1: "Du lundi au vendredi : 7h30-18h30",
+            scheduleLine2: "Fermé les week-ends et jours fériés.",
+            infoLabel: "Informations :",
+            faqPrompt: "Questions fréquentes : <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Politique de Confidentialité",
+            cookies: "Politique de Cookies",
+            terms: "Termes et Conditions",
+            socialContactsTitle: "Réseaux sociaux et contacts"
+          }
+        }
+      };
+    </script>
+
+    <script>
+      (function(){
+        var DEFAULT_LANG = 'pt';
+
+        function getStoredLang(){
+          return window.localStorage ? (localStorage.getItem('cnr-lang') || DEFAULT_LANG) : DEFAULT_LANG;
+        }
+
+        function getCurrentLang(){
+          if (window.LanguageSwitcher && typeof window.LanguageSwitcher.current === 'function') {
+            return window.LanguageSwitcher.current();
+          }
+          return getStoredLang();
+        }
+
+        function getTranslationObject(lang){
+          var translations = window.translations || {};
+          return translations[lang] || translations[DEFAULT_LANG] || {};
+        }
+
+        function getFormTranslation(key, fallback){
+          var lang = getCurrentLang();
+          var formTranslations = getTranslationObject(lang).form || {};
+          return key.split('.').reduce(function(acc, part){
+            return acc && acc[part];
+          }, formTranslations) || fallback;
+        }
+
+        function getCalendarStrings(){
+          var lang = getCurrentLang();
+          var calendar = ((getTranslationObject(lang).form || {}).calendar) || {};
+          var fallback = ((getTranslationObject(DEFAULT_LANG).form || {}).calendar) || {};
+          return {
+            months: calendar.months || fallback.months || ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+            weekdays: calendar.weekdays || fallback.weekdays || ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],
+            rangeSeparator: calendar.rangeSeparator || fallback.rangeSeparator || ' a ',
+            daySingular: calendar.daySingular || fallback.daySingular || 'dia',
+            dayPlural: calendar.dayPlural || fallback.dayPlural || 'dias',
+            prevLabel: calendar.prevLabel || fallback.prevLabel || 'Anterior',
+            nextLabel: calendar.nextLabel || fallback.nextLabel || 'Seguinte'
+          };
+        }
+
+        function escapeAttribute(value){
+          return String(value).replace(/"/g, '&quot;');
+        }
+
+        function updateSubmitButton(state){
+          var submitBtn = document.getElementById('submitBtn');
+          if(!submitBtn) return;
+          var key = state === 'sending' ? 'actions.sending' : 'actions.submit';
+          submitBtn.textContent = getFormTranslation(key, state === 'sending' ? 'A enviar...' : 'Enviar');
+        }
+
+        function updateStatusMessage(type, element){
+          if(!element) return;
+          var key = type === 'success' ? 'messages.success' : 'messages.error';
+          var fallback = type === 'success'
+            ? '✓ Mensagem enviada com sucesso! Receberá uma resposta em breve.'
+            : '✗ Erro ao enviar a mensagem. Por favor, tenta novamente ou contacta-nos diretamente.';
+          element.textContent = getFormTranslation(key, fallback);
+        }
+
+        var yearEl = document.getElementById('year');
+        if(yearEl){
+          yearEl.textContent = new Date().getFullYear();
+        }
+
+        (function(){
+          var toggle = document.querySelector('.nav-toggle');
+          var menu = document.getElementById('main-menu');
+          if(toggle && menu){
+            toggle.addEventListener('click', function(){
+              var expanded = this.getAttribute('aria-expanded') === 'true';
+              this.setAttribute('aria-expanded', String(!expanded));
+              menu.classList.toggle('show');
+            });
+          }
+          var dropdownToggles = document.querySelectorAll('.has-dropdown > a');
+          dropdownToggles.forEach(function(d){
+            d.addEventListener('click', function(e){
+              var parent = this.parentElement;
+              var expanded = this.getAttribute('aria-expanded') === 'true';
+              this.setAttribute('aria-expanded', String(!expanded));
+              if(window.matchMedia && window.matchMedia('(max-width:720px)').matches){
+                var dd = parent.querySelector('.dropdown');
+                if(dd) dd.style.display = expanded ? 'none' : 'flex';
+                e.preventDefault();
+              }
+            });
+          });
+        })();
+
+        var crecheSim = document.getElementById('crecheSim');
+        var crecheNao = document.getElementById('crecheNao');
+        var diasCrecheFieldset = document.getElementById('diasCrecheFieldset');
+
+        if(crecheSim && crecheNao && diasCrecheFieldset){
+          crecheSim.addEventListener('change', function(){
+            if(this.checked){
+              diasCrecheFieldset.classList.remove('hidden');
+            }
+          });
+          crecheNao.addEventListener('change', function(){
+            if(this.checked){
+              diasCrecheFieldset.classList.add('hidden');
+              var checkboxes = diasCrecheFieldset.querySelectorAll('input[type="checkbox"]');
+              checkboxes.forEach(function(cb){ cb.checked = false; });
+            }
+          });
+        }
+
+        var passeiosSim = document.getElementById('passeiosSim');
+        var passeiosNao = document.getElementById('passeiosNao');
+        var diasPasseiosFieldset = document.getElementById('diasPasseiosFieldset');
+
+        if(passeiosSim && passeiosNao && diasPasseiosFieldset){
+          passeiosSim.addEventListener('change', function(){
+            if(this.checked){
+              diasPasseiosFieldset.classList.remove('hidden');
+            }
+          });
+          passeiosNao.addEventListener('change', function(){
+            if(this.checked){
+              diasPasseiosFieldset.classList.add('hidden');
+              var checkboxes = diasPasseiosFieldset.querySelectorAll('input[type="checkbox"]');
+              checkboxes.forEach(function(cb){ cb.checked = false; });
+            }
+          });
+        }
+
+        var customCalendar = {
+          currentMonth: new Date().getMonth(),
+          currentYear: new Date().getFullYear(),
+          selectedStart: null,
+          selectedEnd: null,
+          selectingEnd: false,
+          isOpen: false,
+          initialized: false,
+          calendarEl: document.getElementById('customCalendar'),
+          entradaDisplay: document.getElementById('dataEntradaDisplay'),
+          saidaDisplay: document.getElementById('dataSaidaDisplay'),
+          entradaHidden: document.getElementById('dataEntrada'),
+          saidaHidden: document.getElementById('dataSaida'),
+
+          init: function(){
+            var self = this;
+            if(self.initialized) return;
+            self.initialized = true;
+
+            if(self.entradaDisplay){
+              self.entradaDisplay.addEventListener('click', function(e){
+                e.stopPropagation();
+                self.show();
+              });
+            }
+            if(self.saidaDisplay){
+              self.saidaDisplay.addEventListener('click', function(e){
+                e.stopPropagation();
+                self.show();
+              });
+            }
+
+            document.addEventListener('click', function(e){
+              if(self.isOpen && self.calendarEl && !self.calendarEl.contains(e.target)){
+                if(e.target !== self.entradaDisplay && e.target !== self.saidaDisplay){
+                  self.hide();
+                }
+              }
+            });
+          },
+
+          show: function(){
+            this.isOpen = true;
+            if(this.calendarEl){
+              this.calendarEl.classList.remove('hidden');
+              this.render();
+            }
+          },
+
+          hide: function(){
+            this.isOpen = false;
+            if(this.calendarEl){
+              this.calendarEl.classList.add('hidden');
+            }
+          },
+
+          render: function(){
+            if(!this.calendarEl) return;
+            var self = this;
+            var firstDay = new Date(self.currentYear, self.currentMonth, 1);
+            var lastDay = new Date(self.currentYear, self.currentMonth + 1, 0);
+            var prevLastDay = new Date(self.currentYear, self.currentMonth, 0);
+            var startingDayOfWeek = firstDay.getDay();
+            var monthDays = lastDay.getDate();
+
+            var calendarStrings = getCalendarStrings();
+            var monthNames = calendarStrings.months;
+            var weekdays = calendarStrings.weekdays;
+
+            var html = '<div class="calendar-header">';
+            html += '<button type="button" id="prevMonth" aria-label="' + escapeAttribute(calendarStrings.prevLabel) + '">&lt;</button>';
+            html += '<div class="calendar-month-year">' + monthNames[self.currentMonth] + ' ' + self.currentYear + '</div>';
+            html += '<button type="button" id="nextMonth" aria-label="' + escapeAttribute(calendarStrings.nextLabel) + '">&gt;</button>';
+            html += '</div>';
+
+            html += '<div class="calendar-weekdays">';
+            weekdays.forEach(function(day){
+              html += '<div class="calendar-weekday">' + day + '</div>';
+            });
+            html += '</div>';
+
+            html += '<div class="calendar-days">';
+
+            for(var i = startingDayOfWeek - 1; i >= 0; i--){
+              var day = prevLastDay.getDate() - i;
+              html += '<div class="calendar-day other-month">' + day + '</div>';
+            }
+
+            var today = new Date();
+            var minDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+            for(var day = 1; day <= monthDays; day++){
+              var currentDate = new Date(self.currentYear, self.currentMonth, day);
+              var dateStr = self.formatDate(currentDate);
+              var classes = ['calendar-day'];
+
+              if(currentDate < minDate){
+                classes.push('disabled');
+              }
+              if(currentDate.toDateString() === today.toDateString()){
+                classes.push('today');
+              }
+              if(dateStr === self.selectedStart || dateStr === self.selectedEnd){
+                classes.push('selected');
+              }
+              if(self.selectedStart && self.selectedEnd && currentDate > new Date(self.selectedStart) && currentDate < new Date(self.selectedEnd)){
+                classes.push('in-range');
+              }
+
+              html += '<div class="' + classes.join(' ') + '" data-date="' + dateStr + '">' + day + '</div>';
+            }
+
+            var remainingDays = 42 - (startingDayOfWeek + monthDays);
+            for(var j = 1; j <= remainingDays; j++){
+              html += '<div class="calendar-day other-month">' + j + '</div>';
+            }
+
+            html += '</div>';
+
+            self.calendarEl.innerHTML = html;
+
+            var prevBtn = document.getElementById('prevMonth');
+            var nextBtn = document.getElementById('nextMonth');
+
+            if(prevBtn){
+              prevBtn.addEventListener('click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                self.currentMonth--;
+                if(self.currentMonth < 0){
+                  self.currentMonth = 11;
+                  self.currentYear--;
+                }
+                self.render();
+              });
+            }
+
+            if(nextBtn){
+              nextBtn.addEventListener('click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                self.currentMonth++;
+                if(self.currentMonth > 11){
+                  self.currentMonth = 0;
+                  self.currentYear++;
+                }
+                self.render();
+              });
+            }
+
+            var dayElements = self.calendarEl.querySelectorAll('.calendar-day:not(.disabled):not(.other-month)');
+            dayElements.forEach(function(el){
+              el.addEventListener('click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                var dateStr = this.getAttribute('data-date');
+                if(dateStr){
+                  self.selectDate(dateStr);
+                }
+              });
+            });
+          },
+
+          selectDate: function(dateStr){
+            if(!dateStr) return;
+
+            if(!this.selectedStart || (this.selectedStart && this.selectedEnd)){
+              this.selectedStart = dateStr;
+              this.selectedEnd = null;
+              this.selectingEnd = true;
+              if(this.entradaDisplay) this.entradaDisplay.value = this.formatDisplayDate(dateStr);
+              if(this.entradaHidden) this.entradaHidden.value = dateStr;
+              if(this.saidaDisplay) this.saidaDisplay.value = '';
+              if(this.saidaHidden) this.saidaHidden.value = '';
+              this.render();
+            } else if(this.selectingEnd){
+              var startDate = new Date(this.selectedStart);
+              var endDate = new Date(dateStr);
+
+              if(endDate >= startDate){
+                this.selectedEnd = dateStr;
+                if(this.saidaDisplay) this.saidaDisplay.value = this.formatDisplayDate(dateStr);
+                if(this.saidaHidden) this.saidaHidden.value = dateStr;
+                this.selectingEnd = false;
+                calculateEstadiaDays();
+                this.render();
+
+                var selfRef = this;
+                setTimeout(function(){
+                  selfRef.hide();
+                }, 300);
+              } else {
+                this.selectedStart = dateStr;
+                if(this.entradaDisplay) this.entradaDisplay.value = this.formatDisplayDate(dateStr);
+                if(this.entradaHidden) this.entradaHidden.value = dateStr;
+                this.selectedEnd = null;
+                if(this.saidaDisplay) this.saidaDisplay.value = '';
+                if(this.saidaHidden) this.saidaHidden.value = '';
+                this.render();
+              }
+            }
+          },
+
+          formatDate: function(date){
+            var year = date.getFullYear();
+            var month = String(date.getMonth() + 1).padStart(2, '0');
+            var day = String(date.getDate()).padStart(2, '0');
+            return year + '-' + month + '-' + day;
+          },
+
+          formatDisplayDate: function(dateStr){
+            var parts = dateStr.split('-');
+            return parts[2] + '/' + parts[1] + '/' + parts[0];
+          }
+        };
+
+        var estadiaSim = document.getElementById('estadiaSim');
+        var estadiaNao = document.getElementById('estadiaNao');
+        var diasEstadiaFieldset = document.getElementById('diasEstadiaFieldset');
+        var diasEstadiaHidden = document.getElementById('diasEstadiaHidden');
+
+        if(estadiaSim && estadiaNao && diasEstadiaFieldset){
+          estadiaSim.addEventListener('change', function(){
+            if(this.checked){
+              diasEstadiaFieldset.classList.remove('hidden');
+              customCalendar.init();
+            }
+          });
+          estadiaNao.addEventListener('change', function(){
+            if(this.checked){
+              diasEstadiaFieldset.classList.add('hidden');
+              customCalendar.hide();
+              customCalendar.selectedStart = null;
+              customCalendar.selectedEnd = null;
+              if(customCalendar.entradaDisplay) customCalendar.entradaDisplay.value = '';
+              if(customCalendar.saidaDisplay) customCalendar.saidaDisplay.value = '';
+              if(customCalendar.entradaHidden) customCalendar.entradaHidden.value = '';
+              if(customCalendar.saidaHidden) customCalendar.saidaHidden.value = '';
+              if(diasEstadiaHidden) diasEstadiaHidden.value = '';
+            }
+          });
+        }
+
+        function resetDynamicSections(){
+          if(diasCrecheFieldset){
+            diasCrecheFieldset.classList.add('hidden');
+            var crecheChecks = diasCrecheFieldset.querySelectorAll('input[type="checkbox"]');
+            crecheChecks.forEach(function(cb){ cb.checked = false; });
+          }
+          if(diasPasseiosFieldset){
+            diasPasseiosFieldset.classList.add('hidden');
+            var passeioChecks = diasPasseiosFieldset.querySelectorAll('input[type="checkbox"]');
+            passeioChecks.forEach(function(cb){ cb.checked = false; });
+          }
+          if(diasEstadiaFieldset){
+            diasEstadiaFieldset.classList.add('hidden');
+          }
+          customCalendar.hide();
+          customCalendar.selectedStart = null;
+          customCalendar.selectedEnd = null;
+          if(customCalendar.entradaDisplay) customCalendar.entradaDisplay.value = '';
+          if(customCalendar.saidaDisplay) customCalendar.saidaDisplay.value = '';
+          if(customCalendar.entradaHidden) customCalendar.entradaHidden.value = '';
+          if(customCalendar.saidaHidden) customCalendar.saidaHidden.value = '';
+          if(diasEstadiaHidden) diasEstadiaHidden.value = '';
+        }
+
+        function calculateEstadiaDays(){
+          var dataEntrada = document.getElementById('dataEntrada');
+          var dataSaida = document.getElementById('dataSaida');
+
+          if(dataEntrada && dataSaida && dataEntrada.value && dataSaida.value){
+            var entrada = new Date(dataEntrada.value);
+            var saida = new Date(dataSaida.value);
+            var diff = Math.ceil((saida - entrada) / (1000 * 60 * 60 * 24)) + 1;
+
+            if(diff > 0 && diasEstadiaHidden){
+              var calendarStrings = getCalendarStrings();
+              var separator = calendarStrings.rangeSeparator || ' a ';
+              var dayLabel = diff === 1 ? (calendarStrings.daySingular || 'dia') : (calendarStrings.dayPlural || 'dias');
+              diasEstadiaHidden.value = customCalendar.formatDisplayDate(dataEntrada.value) + separator + customCalendar.formatDisplayDate(dataSaida.value) + ' (' + diff + ' ' + dayLabel + ')';
+            }
+          }
+        }
+
+        var formEl = document.getElementById('infoForm');
+        if(formEl){
+          formEl.addEventListener('submit', function(e){
+            e.preventDefault();
+            var form = this;
+            var submitBtn = document.getElementById('submitBtn');
+            var statusDiv = document.getElementById('formStatus');
+
+            if(!form.checkValidity()){
+              form.reportValidity();
+              return;
+            }
+
+            if(submitBtn){
+              submitBtn.disabled = true;
+            }
+            updateSubmitButton('sending');
+            if(statusDiv){
+              statusDiv.style.display = 'none';
+            }
+
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            })
+            .then(function(response) {
+              if (response.ok) {
+                updateStatusMessage('success', statusDiv);
+                if(statusDiv){
+                  statusDiv.className = 'form-status form-status-success';
+                  statusDiv.style.display = 'block';
+                }
+                form.reset();
+                resetDynamicSections();
+                updateSubmitButton('default');
+                if(submitBtn){
+                  submitBtn.disabled = false;
+                }
+              } else {
+                return response.json().then(function(data) {
+                  throw new Error(data.error || 'Erro ao enviar');
+                });
+              }
+            })
+            .catch(function() {
+              updateStatusMessage('error', statusDiv);
+              if(statusDiv){
+                statusDiv.className = 'form-status form-status-error';
+                statusDiv.style.display = 'block';
+              }
+              updateSubmitButton('default');
+              if(submitBtn){
+                submitBtn.disabled = false;
+              }
+            });
+          });
+        }
+      })();
+    </script>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+      <img src="assets/logos/whatsapp.webp" alt="WhatsApp" />
+    </a>
+
+
+    <!-- Language Switcher -->
+        <!-- Animation libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="js/lang-switcher.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dog-effects.js"></script>
+
+    <script>
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registado com sucesso:', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('Falha ao registar Service Worker:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

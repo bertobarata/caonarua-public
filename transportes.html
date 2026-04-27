@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Preload critical resources -->
+  <link rel="preload" href="css/styles.css?v=19" as="style" />
+    <link rel="preload" href="css/lang-switcher.css" as="style" />
+    
+    <title>Transportes — Cão na Rua</title>
+  <link rel="stylesheet" href="css/styles.css?v=19" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="css/lang-switcher.css" />
+    <link rel="icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="shortcut icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4" type="image/png">
+    <link rel="apple-touch-icon" href="assets/logos/CNR-logotipo-removebg.webp?v=4">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <a href="index.html#home" class="logo-link" aria-label="Início">
+          <img src="assets/logos/CNR-logotipo-removebg.webp" alt="CNR - logotipo" class="logo" />
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
+        <ul id="main-menu">
+          <li><a href="index.html#home" class="home-btn" data-i18n="nav.home">Início 🏠</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#services" aria-haspopup="true" aria-expanded="false" data-i18n="nav.services">Serviços 🐾</a>
+                            <ul class="dropdown" aria-label="Serviços" data-i18n-aria="nav.servicesLabel">
+                <li><a href="creche.html" data-i18n="nav.daycare">Creche</a></li>
+                <li><a href="passeios-individuais.html" data-i18n="nav.individualWalks">Passeios Individuais</a></li>
+                <li><a href="estadias-familiares.html" data-i18n="nav.familyStays">Estadias Familiares</a></li>
+                <li><a href="transportes.html" data-i18n="nav.transport">Transporte</a></li>
+                <li><a href="passeiosnanatureza.html" data-i18n="nav.natureWalks">Passeios na Natureza</a></li>
+                <li><a href="casamentos.html" data-i18n="nav.weddings">Cães em Casamentos</a></li>
+              </ul>
+          </li>
+          <li><a href="caes-do-cao-na-rua.html" data-i18n="nav.ourDogs">Os Nossos Cães 🐕</a></li>
+          <li><a href="index.html#team" data-i18n="nav.team">Equipa 👩‍⚕️</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ ❓</a></li>
+          <li><a class="cta" href="index.html#contacts" data-i18n="nav.contact">Contacta-nos 📞</a></li>
+            <li class="menu-back-item"><button class="menu-back-btn" aria-label="Fechar menu">&#x203A;</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section creche-main">
+      <h1 class="page-title" data-i18n="transport.title">Transportes 
+        <picture>
+          <source srcset="assets/gifs/van.webp" type="image/webp">
+          <img src="assets/gifs/van.gif" alt="Van" class="van-gif-title" />
+        </picture>
+      </h1>
+      <p class="page-subtitle" data-i18n="transport.subtitle">Facilitamos o transporte do teu cão com segurança e comodidade</p>
+      
+      <div class="content">
+        <h4 data-i18n="transport.homeTitle">Transporte ao Domicílio</h4>
+        <p data-i18n="transport.homeText">O transporte ao domicílio consiste na recolha e/ou entrega do teu cão diretamente na tua morada, proporcionando máxima comodidade e segurança. Disponível mediante marcação prévia e sujeito a disponibilidade de rota.
+            <br />
+            para mais informações sobre custos e pedidos especiais, <a href="#contacts" class="emphasized-link">contacta-nos</a>.
+        </p>
+
+        
+
+        <h4 data-i18n="transport.lisbonTitle">Transporte entre Lisboa e Sintra</h4>
+        <p data-i18n="transport.pickupPoints">Pontos de entrega e recolha:</p>
+        <ul class="bulleted">
+          <li data-i18n="transport.olivais"><strong>Olivais</strong> | Segunda a Quinta: 7h30 | 18h30</li>
+          <li data-i18n="transport.benfica"><strong>Benfica</strong> | Segunda a Quinta: 7h45 | 18h30</li>
+          <li data-i18n="transport.telheiras"><strong>Telheiras</strong> | Segunda a Quinta: 8h00 | 18h00-18h15</li>
+        </ul>
+        
+<h4 data-i18n="transport.cascaisTitle">Transporte entre Linha de Cascais e Sintra</h4>
+        <p data-i18n="transport.cascaisText">Pontos de entrega e recolha ao longo da linha. Consulte o mapa para visualizar o percurso e os principais pontos atendidos.</p>
+  <picture>
+    <source type="image/webp"
+      srcset="assets/fotos/transportes/transportes_cascais-400w.webp 400w, assets/fotos/transportes/transportes_cascais-600w.webp 600w, assets/fotos/transportes/transportes_cascais.webp 1862w"
+      sizes="100vw" />
+    <img src="assets/fotos/transportes/transportes_cascais.webp"
+         srcset="assets/fotos/transportes/transportes_cascais-400w.webp 400w, assets/fotos/transportes/transportes_cascais-600w.webp 600w, assets/fotos/transportes/transportes_cascais.webp 1862w"
+         sizes="100vw"
+         width="1862" height="739"
+         alt="Linha Cascais-Sintra" class="mapa-cascais-sintra" loading="lazy" />
+  </picture>
+        <div class="info-cascais-horario">
+          <span class="info-cascais-label" data-i18n="transport.cascaisSchedule">Dias e Horários da linha de Cascais sob consulta:</span>
+          <a href="https://wa.me/351917684724" target="_blank" rel="noopener noreferrer" class="whatsapp-cta">
+            <img src="assets/logos/whatsapp.webp" alt="WhatsApp" class="contact-icon whatsapp-icon" />
+            <span class="contact-text whatsapp-number">+351 917 684 724</span>
+          </a>
+        </div>
+        <h4 data-i18n="transport.instructionsTitle">Instruções Importantes</h4>
+        <ul class="bulleted">
+          <li data-i18n="transport.instruction1">Os pontos são públicos e definidos para segurança e praticidade.</li>
+          <li data-i18n="transport.instruction2">Utilização apenas com marcação prévia.</li>
+          <li data-i18n="transport.instruction3">Chegue 5 minutos antes do horário combinado.</li>
+          <li data-i18n="transport.instruction4">Informe-nos com antecedência sobre necessidades especiais.</li>
+          <li data-i18n="transport.instruction5">Em caso de possível atraso, avise-nos o mais cedo possível.</li>
+          <li data-i18n="transport.instruction6">O tutor é responsável por garantir que o cão está apto para transporte.</li>
+        </ul>
+      </div>
+      <section class="section faq" aria-labelledby="faq-title">
+        <h3 id="faq-title" data-i18n="transport.faqTitle">FAQ Transportes</h3>
+        <details>
+          <summary data-i18n="transport.faq1Q">Posso pedir transporte fora dos horários?</summary>
+          <p class="lead-text" data-i18n="transport.faq1A">Contacta-nos para avaliarmos a possibilidade. Tentamos ser flexíveis sempre que possível.</p>
+        </details>
+        <details>
+          <summary data-i18n="transport.faq2Q">O transporte é feito em segurança?</summary>
+          <p class="lead-text" data-i18n="transport.faq2A">Sim! Utilizamos caixas de transporte e cintos próprios para garantir o conforto e a segurança do teu cão.</p>
+        </details>
+        <details>
+          <summary data-i18n="transport.faq3Q">O transporte é individual?</summary>
+          <p class="lead-text" data-i18n="transport.faq3A">O transporte pode ser partilhado com outros cães, mas sempre de forma segura e respeitando o perfil de cada animal.</p>
+        </details>
+        <details>
+          <summary data-i18n="transport.faq4Q">Como sei quando o meu cão chegou?</summary>
+          <p class="lead-text" data-i18n="transport.faq4A">Enviamos mensagem a confirmar a entrega/recolha do teu cão.</p>
+        </details>
+      </section>
+    </main>
+
+    <section id="contacts" class="section" aria-labelledby="contact-heading">
+      <h3 id="contact-heading" data-i18n="contact.heading">QUERES MARCAR A AVALIAÇÃO DO TEU CÃO?</h3>
+
+      <div class="contact-methods">
+        <div class="contact-line whatsapp-line">
+          <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="contact-link whatsapp-cta" aria-label="Contactar por WhatsApp - Preferencial" data-i18n-aria="contact.whatsappAria">
+            <img src="assets/logos/whatsapp.webp" alt="whatsapp" class="contact-icon whatsapp-icon" />
+            <span class="contact-text" data-i18n="contact.whatsappLabel">WHATSAPP</span>
+            <span class="badge" data-i18n="contact.badge">Preferencial</span>
+          </a>
+        </div>
+
+        <div class="contact-line">
+          <a href="mailto:caoderuageral@gmail.com" class="contact-link">
+            <img src="assets/logos/o-email.webp" alt="email" class="contact-icon" />
+            <span class="contact-text">caoderuageral@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="contact-line">
+          <a href="https://instagram.com/cao_na_rua" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <img src="assets/logos/instagram.webp" alt="instagram" class="contact-icon" />
+            <span class="contact-text">@cao_na_rua</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="contact-sub" data-i18n="contact.or">ou então</p>
+
+      <div class="form-cta">
+        <a class="button" href="formulario.html" data-i18n="contact.formButton">Preenche o formulário</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+
+    <div class="footer-columns">
+      <!-- Horários -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.scheduleTitle">Horários de Funcionamento</h4>
+        <div class="footer-horario">
+          <span data-i18n="footer.scheduleLine1">Segunda a Sexta: 7h30-18.30h</span>
+          <span data-i18n="footer.scheduleLine2">Encerra aos fins de semana e feriados.</span>
+        </div>
+      </div>
+      <!-- Informações -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.infoLabel">Informações</h4>
+        <div class="footer-contact-line">
+          <span data-i18n="footer.faqPrompt">Perguntas frequentes: <a href="faq.html" class="footer-link-faq">FAQs</a></span>
+        </div>
+        <div class="footer-contact-line">
+          <a href="politica-privacidade.html" class="footer-link-privacy" data-i18n="footer.privacy">Política de Privacidade</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="politica-cookies.html" class="footer-link-privacy" data-i18n="footer.cookies">Política de Cookies</a>
+          </div>
+          <div class="footer-contact-line">
+            <a href="termos-condicoes.html" class="footer-link-terms" data-i18n="footer.terms">Termos e Condições</a>
+        </div>
+      </div>
+      <!-- Redes Sociais e Contactos -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footer.socialContactsTitle">Redes Sociais e Contactos</h4>
+        <div class="footer-contact-line">
+          <img src="assets/logos/whatsapp.webp" alt="whatsapp" class="footer-icon footer-icon-whatsapp">
+          <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="footer-link-whatsapp">+351 934 527 652</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/instagram.webp" alt="instagram" class="footer-icon footer-icon-instagram">
+          <a href="https://instagram.com/cao_na_rua" target="_blank" rel="noopener noreferrer" class="footer-link-instagram">@cao_na_rua</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/facebook2.webp" alt="facebook" class="footer-icon footer-icon-facebook">
+          <a href="https://www.facebook.com/caoderualisboa/" target="_blank" rel="noopener noreferrer" class="footer-link-facebook">Cão de Rua Lisboa</a>
+        </div>
+        <div class="footer-contact-line">
+          <img src="assets/logos/o-email.webp" alt="email" class="footer-icon footer-icon-mail">
+          <a href="mailto:caoderuageral@gmail.com" class="footer-link-mail">caoderuageral@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <small>© <span id="year"></span> Cão na Rua</small>
+    </footer>
+
+    <!-- Traduções da página Transportes -->
+    <script>
+      window.translations = {
+        pt: {
+          pageTitle: "Transportes — Cão na Rua",
+          nav: {
+            home: "Início 🏠",
+            services: "Serviços 🐾",
+            daycare: "Creche",
+            natureWalks: "Passeios na Natureza",
+            individualWalks: "Passeios Individuais",
+            familyStays: "Estadias Familiares",
+            transport: "Transporte",
+            ourDogs: "Os Nossos Cães 🐕",
+            team: "Equipa 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contacta-nos 📞"
+          },
+          transport: {
+            title: "Transportes",
+            subtitle: "Facilitamos o transporte do teu cão com segurança e comodidade",
+            homeTitle: "Transporte ao Domicílio",
+            homeText: "O transporte ao domicílio consiste na recolha e/ou entrega do teu cão diretamente na tua morada, proporcionando máxima comodidade e segurança. Disponível mediante marcação prévia e sujeito a disponibilidade de rota.<br />para mais informações sobre custos e pedidos especiais, <a href='#contacts' class='emphasized-link'>contacta-nos</a>.",
+            lisbonTitle: "Transporte entre Lisboa e Sintra",
+            pickupPoints: "Pontos de entrega e recolha:",
+            olivais: "<strong>Olivais</strong> | Segunda a Quinta: 7h30 | 18h30",
+            benfica: "<strong>Benfica</strong> | Segunda a Quinta: 7h45 | 18h30",
+            telheiras: "<strong>Telheiras</strong> | Segunda a Quinta: 8h00 | 18h00-18h15",
+            cascaisTitle: "Transporte entre Linha de Cascais e Sintra",
+            cascaisText: "Pontos de entrega e recolha ao longo da linha. Consulte o mapa para visualizar o percurso e os principais pontos atendidos.",
+            cascaisSchedule: "Dias e Horários da linha de Cascais sob consulta:",
+            instructionsTitle: "Instruções Importantes",
+            instruction1: "Os pontos são públicos e definidos para segurança e praticidade.",
+            instruction2: "Utilização apenas com marcação prévia.",
+            instruction3: "Chegue 5 minutos antes do horário combinado.",
+            instruction4: "Informe-nos com antecedência sobre necessidades especiais.",
+            instruction5: "Em caso de possível atraso, avise-nos o mais cedo possível.",
+            instruction6: "O tutor é responsável por garantir que o cão está apto para transporte.",
+            faqTitle: "FAQ Transportes",
+            faq1Q: "Posso pedir transporte fora dos horários?",
+            faq1A: "Contacta-nos para avaliarmos a possibilidade. Tentamos ser flexíveis sempre que possível.",
+            faq2Q: "O transporte é feito em segurança?",
+            faq2A: "Sim! Utilizamos caixas de transporte e cintos próprios para garantir o conforto e a segurança do teu cão.",
+            faq3Q: "O transporte é individual?",
+            faq3A: "O transporte pode ser partilhado com outros cães, mas sempre de forma segura e respeitando o perfil de cada animal.",
+            faq4Q: "Como sei quando o meu cão chegou?",
+            faq4A: "Enviamos mensagem a confirmar a entrega/recolha do teu cão."
+          },
+          footer: {
+            scheduleTitle: "Horários de Funcionamento",
+            scheduleLine1: "Segunda a Sexta: 7h30-18.30h",
+            scheduleLine2: "Encerra aos fins de semana e feriados.",
+            infoLabel: "Informações",
+            faqPrompt: "Perguntas frequentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidade",
+            cookies: "Política de Cookies",
+            terms: "Termos e Condições",
+            socialContactsTitle: "Redes Sociais e Contactos"
+          },
+          contact: {
+            heading: "QUERES MARCAR A AVALIAÇÃO DO TEU CÃO?",
+            formButton: "Preenche o formulário",
+            or: "ou então",
+            whatsappAria: "Contactar por WhatsApp - Preferencial",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferencial"
+          }
+        },
+        en: {
+          pageTitle: "Transport — Dog On The Street",
+          nav: {
+            home: "Home 🏠",
+            services: "Services 🐾",
+            daycare: "Daycare",
+            natureWalks: "Nature Walks",
+            individualWalks: "Individual Walks",
+            familyStays: "Family Stays",
+            transport: "Transport",
+            ourDogs: "Our Dogs 🐕",
+            team: "Team 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contact Us 📞"
+          },
+          transport: {
+            title: "Transport",
+            subtitle: "We facilitate your dog's transport with safety and convenience",
+            homeTitle: "Home Transport",
+            homeText: "Home transport consists of picking up and/or delivering your dog directly to your address, providing maximum comfort and safety. Available by prior appointment and subject to route availability.<br />for more information about costs and special requests, <a href='#contacts' class='emphasized-link'>contact us</a>.",
+            lisbonTitle: "Transport between Lisbon and Sintra",
+            pickupPoints: "Pickup and delivery points:",
+            olivais: "<strong>Olivais</strong> | Monday to Thursday: 7:30 | 18:30",
+            benfica: "<strong>Benfica</strong> | Monday to Thursday: 7:45 | 18:30",
+            telheiras: "<strong>Telheiras</strong> | Monday to Thursday: 8:00 | 18:00-18:15",
+            cascaisTitle: "Transport between Cascais Line and Sintra",
+            cascaisText: "Pickup and delivery points along the line. Check the map to view the route and main points served.",
+            cascaisSchedule: "Days and Times for the Cascais line upon inquiry:",
+            instructionsTitle: "Important Instructions",
+            instruction1: "Points are public and defined for safety and practicality.",
+            instruction2: "Use by appointment only.",
+            instruction3: "Arrive 5 minutes before the scheduled time.",
+            instruction4: "Inform us in advance about special needs.",
+            instruction5: "In case of possible delay, notify us as early as possible.",
+            instruction6: "The owner is responsible for ensuring the dog is fit for transport.",
+            faqTitle: "Transport FAQ",
+            faq1Q: "Can I request transport outside scheduled hours?",
+            faq1A: "Contact us to evaluate the possibility. We try to be flexible whenever possible.",
+            faq2Q: "Is the transport done safely?",
+            faq2A: "Yes! We use transport crates and proper restraints to ensure your dog's comfort and safety.",
+            faq3Q: "Is the transport individual?",
+            faq3A: "Transport may be shared with other dogs, but always safely and respecting each animal's profile.",
+            faq4Q: "How do I know when my dog has arrived?",
+            faq4A: "We send a message confirming your dog's pickup/delivery."
+          },
+          footer: {
+            scheduleTitle: "Operating Hours",
+            scheduleLine1: "Monday to Friday: 7:30-18:30",
+            scheduleLine2: "Closed on weekends and holidays.",
+            infoLabel: "Information",
+            faqPrompt: "Frequently asked questions: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Privacy Policy",
+            cookies: "Cookie Policy",
+            terms: "Terms & Conditions",
+            socialContactsTitle: "Social Media & Contacts"
+          },
+          contact: {
+            heading: "WANT TO BOOK AN EVALUATION FOR YOUR DOG?",
+            formButton: "Fill out the form",
+            or: "ou então",
+            whatsappAria: "Contact via WhatsApp - Preferred",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferred"
+          }
+        },
+        es: {
+          pageTitle: "Transporte — Perro En La Calle",
+          nav: {
+            home: "Inicio 🏠",
+            services: "Servicios 🐾",
+            daycare: "Guardería",
+            natureWalks: "Paseos en la Naturaleza",
+            individualWalks: "Paseos Individuales",
+            familyStays: "Estancias Familiares",
+            transport: "Transporte",
+            ourDogs: "Nuestros Perros 🐕",
+            team: "Equipo 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contáctenos 📞"
+          },
+          transport: {
+            title: "Transporte",
+            subtitle: "Facilitamos el transporte de tu perro con seguridad y comodidad",
+            homeTitle: "Transporte a Domicilio",
+            homeText: "El transporte a domicilio consiste en la recogida y/o entrega de tu perro directamente en tu dirección, proporcionando máxima comodidad y seguridad. Disponible con cita previa y sujeto a disponibilidad de ruta.<br />para más información sobre costos y pedidos especiales, <a href='#contacts' class='emphasized-link'>contáctanos</a>.",
+            lisbonTitle: "Transporte entre Lisboa y Sintra",
+            pickupPoints: "Puntos de entrega y recogida:",
+            olivais: "<strong>Olivais</strong> | Lunes a Jueves: 7:30 | 18:30",
+            benfica: "<strong>Benfica</strong> | Lunes a Jueves: 7:45 | 18:30",
+            telheiras: "<strong>Telheiras</strong> | Lunes a Jueves: 8:00 | 18:00-18:15",
+            cascaisTitle: "Transporte entre Línea de Cascais y Sintra",
+            cascaisText: "Puntos de entrega y recogida a lo largo de la línea. Consulta el mapa para visualizar la ruta y los principales puntos atendidos.",
+            cascaisSchedule: "Días y Horarios de la línea de Cascais bajo consulta:",
+            instructionsTitle: "Instrucciones Importantes",
+            instruction1: "Los puntos son públicos y definidos por seguridad y practicidad.",
+            instruction2: "Uso solo con cita previa.",
+            instruction3: "Llegue 5 minutos antes de la hora programada.",
+            instruction4: "Infórmenos con anticipación sobre necesidades especiales.",
+            instruction5: "En caso de posible retraso, avísenos lo antes posible.",
+            instruction6: "El tutor es responsable de garantizar que el perro está apto para el transporte.",
+            faqTitle: "FAQ Transporte",
+            faq1Q: "¿Puedo solicitar transporte fuera de horario?",
+            faq1A: "Contáctanos para evaluar la posibilidad. Intentamos ser flexibles siempre que sea posible.",
+            faq2Q: "¿El transporte se realiza con seguridad?",
+            faq2A: "¡Sí! Utilizamos jaulas de transporte y cinturones propios para garantizar el confort y la seguridad de tu perro.",
+            faq3Q: "¿El transporte es individual?",
+            faq3A: "El transporte puede ser compartido con otros perros, pero siempre de forma segura y respetando el perfil de cada animal.",
+            faq4Q: "¿Cómo sé cuándo ha llegado mi perro?",
+            faq4A: "Enviamos un mensaje confirmando la entrega/recogida de tu perro."
+          },
+          footer: {
+            scheduleTitle: "Horarios de Funcionamento",
+            scheduleLine1: "Lunes a viernes: 7h30-18h30",
+            scheduleLine2: "Cerrado fines de semana y festivos.",
+            infoLabel: "Información",
+            faqPrompt: "Preguntas frecuentes: <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Política de Privacidad",
+            cookies: "Política de Cookies",
+            terms: "Términos y Condiciones",
+            socialContactsTitle: "Redes Sociales y Contactos"
+          },
+          contact: {
+            heading: "¿QUIERES RESERVAR UNA EVALUACIÓN PARA TU PERRO?",
+            formButton: "Rellena el formulario",
+            or: "ou então",
+            whatsappAria: "Contactar por WhatsApp - Preferencial",
+            whatsappLabel: "WHATSAPP",
+            badge: "Preferencial"
+          }
+        },
+        fr: {
+          pageTitle: "Transport — Chien Dans La Rue",
+          nav: {
+            home: "Accueil 🏠",
+            services: "Services 🐾",
+            daycare: "Garderie",
+            natureWalks: "Promenades dans la Nature",
+            individualWalks: "Promenades Individuelles",
+            familyStays: "Séjours en Famille",
+            transport: "Transport",
+            ourDogs: "Nos Chiens 🐕",
+            team: "Équipe 👩‍⚕️",
+            faq: "FAQ ❓",
+            contact: "Contactez-nous 📞"
+          },
+          transport: {
+            title: "Transport",
+            subtitle: "Nous facilitons le transport de votre chien en toute sécurité et commodité",
+            homeTitle: "Transport à Domicile",
+            homeText: "Le transport à domicile consiste en la collecte et/ou la livraison de votre chien directement à votre adresse, offrant un maximum de confort et de sécurité. Disponible sur rendez-vous et sous réserve de disponibilité d'itinéraire.<br />pour plus d'informations sur les coûts et les demandes spéciales, <a href='#contacts' class='emphasized-link'>contactez-nous</a>.",
+            lisbonTitle: "Transport entre Lisbonne et Sintra",
+            pickupPoints: "Points de collecte et de livraison:",
+            olivais: "<strong>Olivais</strong> | Lundi à Jeudi: 7h30 | 18h30",
+            benfica: "<strong>Benfica</strong> | Lundi à Jeudi: 7h45 | 18h30",
+            telheiras: "<strong>Telheiras</strong> | Lundi à Jeudi: 8h00 | 18h00-18h15",
+            cascaisTitle: "Transport entre la Ligne de Cascais et Sintra",
+            cascaisText: "Points de collecte et de livraison le long de la ligne. Consultez la carte pour visualiser l'itinéraire et les principaux points desservis.",
+            cascaisSchedule: "Jours et Horaires de la ligne de Cascais sur demande:",
+            instructionsTitle: "Instructions Importantes",
+            instruction1: "Les points sont publics et définis pour la sécurité et la praticité.",
+            instruction2: "Utilisation uniquement sur rendez-vous.",
+            instruction3: "Arrivez 5 minutes avant l'heure prévue.",
+            instruction4: "Informez-nous à l'avance des besoins spéciaux.",
+            instruction5: "En cas de retard possible, prévenez-nous le plus tôt possible.",
+            instruction6: "Le propriétaire est responsable de s'assurer que le chien est apte au transport.",
+            faqTitle: "FAQ Transport",
+            faq1Q: "Puis-je demander un transport en dehors des horaires?",
+            faq1A: "Contactez-nous pour évaluer la possibilité. Nous essayons d'être flexibles quand c'est possible.",
+            faq2Q: "Le transport est-il effectué en toute sécurité?",
+            faq2A: "Oui! Nous utilisons des cages de transport et des harnais appropriés pour assurer le confort et la sécurité de votre chien.",
+            faq3Q: "Le transport est-il individuel?",
+            faq3A: "Le transport peut être partagé avec d'autres chiens, mais toujours en toute sécurité et en respectant le profil de chaque animal.",
+            faq4Q: "Comment savoir quand mon chien est arrivé?",
+            faq4A: "Nous envoyons un message confirmant la collecte/livraison de votre chien."
+          },
+          footer: {
+            scheduleTitle: "Horaires d'Ouverture",
+            scheduleLine1: "Du lundi au vendredi : 7h30-18h30",
+            scheduleLine2: "Fermé les week-ends et jours fériés.",
+            infoLabel: "Informations",
+            faqPrompt: "Questions fréquentes : <a href=\"faq.html\" class=\"footer-link-faq\">FAQs</a>",
+            privacy: "Politique de Confidentialité",
+            cookies: "Politique de Cookies",
+            terms: "Termes et Conditions",
+            socialContactsTitle: "Réseaux sociaux et contacts"
+          },
+          contact: {
+            heading: "VOUS VOULEZ RÉSERVER UNE ÉVALUATION POUR VOTRE CHIEN ?",
+            formButton: "Remplissez le formulaire",
+            or: "ou então",
+            whatsappAria: "Contacter par WhatsApp - Préférentiel",
+            whatsappLabel: "WHATSAPP",
+            badge: "Préférentiel"
+          }
+        }
+      };
+    </script>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/351934527652" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+      <img src="assets/logos/whatsapp.webp" alt="WhatsApp" />
+    </a>
+
+
+    <!-- Language Switcher -->
+        <!-- Animation libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="js/lang-switcher.js"></script>
+    <script src="js/cookie-consent.js"></script>
+
+    <script>
+      // Insert current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+      (function(){
+        var toggle = document.querySelector('.nav-toggle');
+        var menu = document.getElementById('main-menu');
+        if(toggle && menu){
+          toggle.addEventListener('click', function(){
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            menu.classList.toggle('show');
+          });
+        }
+        var backBtn = document.querySelector('.menu-back-btn');
+        if(backBtn && toggle) {
+          backBtn.addEventListener('click', function(){ toggle.click(); });
+        }
+        var dropdownToggles = document.querySelectorAll('.has-dropdown > a');
+        dropdownToggles.forEach(function(d){
+          d.addEventListener('click', function(e){
+            var parent = this.parentElement;
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            if(window.matchMedia && window.matchMedia('(max-width:720px)').matches){
+              var dd = parent.querySelector('.dropdown');
+              if(dd) dd.style.display = expanded ? 'none' : 'flex';
+              e.preventDefault();
+            }
+          });
+        });
+      })();
+
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registado com sucesso:', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('Falha ao registar Service Worker:', error);
+            });
+        });
+      }
+    </script>
+    <script src="js/lang-switcher.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dog-effects.js"></script>
+  </body>
+</html>
